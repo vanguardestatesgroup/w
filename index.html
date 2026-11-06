@@ -1,0 +1,2741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanguard Estates — Global Homes From $25,000 | Monthly or Bulk Payment</title>
+<meta name="description" content="Vanguard Estates sells affordable, title-verified homes across 21 countries. Pay $5,000 monthly or in bulk. Inspection fee $200. Homes from $25,000+.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root{
+    --paper:#F3EEE6;
+    --paper-2:#EAE2D5;
+    --cream:#FBF8F2;
+    --ink:#12130F;
+    --pine:#143B31;
+    --pine-deep:#0B1A15;
+    --pine-light:#2F6B58;
+    --taupe:#756B5D;
+    --copper:#C2622C;
+    --copper-soft:#E0A075;
+    --rail:0px;
+    --hair:rgba(18,19,15,.16);
+    --hair-light:rgba(243,238,230,.18);
+    --ease:cubic-bezier(.22,.68,0,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+    font-size:16px;line-height:1.62;letter-spacing:-.005em;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button,input,select,textarea{font:inherit;color:inherit;}
+  ::selection{background:var(--copper);color:var(--cream);}
+
+  /* ---------- Typography helpers ---------- */
+  .display{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:.92;letter-spacing:-.028em;font-variation-settings:'SOFT' 0,'WONK' 0;}
+  .serif{font-family:'Fraunces',Georgia,serif;}
+  .num{font-family:'Fraunces',Georgia,serif;font-variant-numeric:tabular-nums lining-nums;letter-spacing:-.02em;}
+  .label{font-size:10.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;line-height:1.4;}
+  .muted{color:var(--taupe);}
+  .rule{height:1px;background:var(--hair);width:100%;border:0;margin:0;}
+  .wrap{width:min(1320px,100% - clamp(22px,5vw,80px));margin-inline:auto;}
+
+  /* ---------- Left index rail ---------- */
+  .rail{
+    position:fixed;left:0;top:0;bottom:0;width:72px;z-index:70;
+    display:none;flex-direction:column;align-items:center;justify-content:space-between;
+    padding:18px 0 22px;background:var(--paper);border-right:1px solid var(--hair);
+  }
+  .rail.dark{background:var(--pine-deep);border-right-color:var(--hair-light);}
+  .rail-mark{width:38px;height:38px;}
+  .rail-word{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.42em;font-size:10px;font-weight:700;text-transform:uppercase;color:var(--taupe);}
+  .rail.dark .rail-word{color:rgba(243,238,230,.55);}
+  .rail-plate{font-family:'Fraunces',serif;font-size:22px;font-weight:400;color:var(--copper);font-variant-numeric:tabular-nums;}
+  @media(min-width:1180px){
+    :root{--rail:72px;}
+    .rail{display:flex;}
+    main,footer{padding-left:var(--rail);}
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:fixed;top:0;left:var(--rail);right:0;z-index:60;
+    transition:background .5s var(--ease),box-shadow .5s var(--ease),color .4s;
+  }
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:24px;height:74px;}
+  header .inner{width:min(1320px,100% - clamp(22px,5vw,80px));margin-inline:auto;}
+  header.at-top{color:var(--cream);}
+  header.scrolled{background:rgba(243,238,230,.92);backdrop-filter:blur(14px) saturate(1.2);color:var(--ink);box-shadow:0 1px 0 var(--hair);}
+  .logo{display:flex;align-items:center;gap:11px;font-family:'Fraunces',serif;font-size:19px;font-weight:600;letter-spacing:-.02em;}
+  .logo svg{width:32px;height:32px;flex:none;}
+  .logo small{display:block;font-family:'Archivo',sans-serif;font-size:8.5px;letter-spacing:.28em;font-weight:700;text-transform:uppercase;opacity:.62;margin-top:-2px;}
+  nav.main{display:flex;align-items:center;gap:30px;}
+  nav.main a{position:relative;font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;padding:6px 0;opacity:.86;}
+  nav.main a::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:100%;background:var(--copper);transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease);}
+  nav.main a:hover::after,nav.main a.active::after{transform:scaleX(1);transform-origin:left;}
+  nav.main a.active{opacity:1;}
+  .btn{
+    position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:15px 28px;border-radius:2px;border:1px solid transparent;cursor:pointer;
+    font-size:11.5px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;
+    transition:transform .5s var(--ease),background .35s,color .35s,border-color .35s;
+    will-change:transform;overflow:hidden;
+  }
+  .btn-copper{background:var(--copper);color:#fff;}
+  .btn-copper:hover{background:#A94F20;}
+  .btn-ink{background:var(--ink);color:var(--cream);}
+  .btn-ink:hover{background:var(--pine);}
+  .btn-ghost{border-color:currentColor;background:transparent;}
+  .btn-ghost:hover{background:currentColor;}
+  .btn-ghost:hover span{color:var(--paper);}
+  .btn-light{background:var(--cream);color:var(--ink);}
+  .btn-light:hover{background:#fff;}
+  .btn span{position:relative;z-index:2;transition:color .35s;}
+  .header-phone{display:none;align-items:center;gap:9px;font-size:12.5px;font-weight:600;letter-spacing:.04em;white-space:nowrap;}
+  .header-phone svg{width:15px;height:15px;color:var(--copper);flex:none;}
+  .header-phone:hover{color:var(--copper);}
+  @media(min-width:1280px){.header-phone{display:inline-flex;}}
+  .menu-toggle{display:none;width:46px;height:46px;border:1px solid currentColor;background:transparent;border-radius:2px;cursor:pointer;position:relative;}
+  .menu-toggle i{position:absolute;left:12px;right:12px;height:1.5px;background:currentColor;transition:transform .4s var(--ease),opacity .3s;}
+  .menu-toggle i:nth-child(1){top:17px;} .menu-toggle i:nth-child(2){top:22.5px;} .menu-toggle i:nth-child(3){top:28px;}
+  body.nav-open .menu-toggle i:nth-child(1){transform:translateY(5.5px) rotate(45deg);}
+  body.nav-open .menu-toggle i:nth-child(2){opacity:0;}
+  body.nav-open .menu-toggle i:nth-child(3){transform:translateY(-5.5px) rotate(-45deg);}
+  @media(max-width:1023px){
+    nav.main{
+      position:fixed;inset:0;background:var(--pine-deep);flex-direction:column;justify-content:center;gap:6px;
+      clip-path:inset(0 0 100% 0);transition:clip-path .7s var(--ease);color:var(--cream);z-index:59;
+    }
+    body.nav-open nav.main{clip-path:inset(0 0 0 0);}
+    nav.main a{font-family:'Fraunces',serif;font-size:31px;letter-spacing:-.02em;text-transform:none;font-weight:500;padding:9px 0;}
+    nav.main a::after{height:1px;}
+    .menu-toggle{display:block;z-index:61;}
+    .header-cta{display:none;}
+  }
+  .nav-phone{display:none !important;}
+  @media(max-width:1023px){
+    nav.main a.nav-phone{
+      display:inline-flex !important;margin-top:24px;padding:14px 26px;border:1px solid var(--copper);
+      color:var(--copper-soft);font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;
+      letter-spacing:.16em;text-transform:uppercase;border-radius:2px;
+    }
+    nav.main a.nav-phone::after{display:none;}
+    nav.main a.nav-phone:hover{background:var(--copper);color:#fff;}
+  }
+
+  /* ---------- Page router ---------- */
+  .page{display:none;}
+  .page.active{display:block;animation:pageIn .8s var(--ease) both;}
+  @keyframes pageIn{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:none;}}
+  .wipe{position:fixed;inset:0;background:var(--pine-deep);z-index:200;transform:scaleY(0);transform-origin:bottom;pointer-events:none;}
+  .wipe.go{animation:wipe .95s var(--ease) both;}
+  @keyframes wipe{
+    0%{transform:scaleY(0);transform-origin:bottom;}
+    45%{transform:scaleY(1);transform-origin:bottom;}
+    55%{transform:scaleY(1);transform-origin:top;}
+    100%{transform:scaleY(0);transform-origin:top;}
+  }
+
+  /* ---------- Reveal ---------- */
+  .js .reveal{opacity:0;transform:translateY(26px);}
+  .reveal.in{opacity:1;transform:none;transition:opacity 1s var(--ease),transform 1.1s var(--ease);}
+  .js .reveal-line{overflow:hidden;}
+  .js .reveal-line > *{display:block;transform:translateY(105%);transition:transform 1.05s var(--ease);}
+  .reveal-line.in > *{transform:none;}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--pine-deep);color:var(--cream);}
+  .hero-bg{position:absolute;inset:0;overflow:hidden;}
+  .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.8s var(--ease);}
+  .hero-slide.active{opacity:1;}
+  .hero-slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);filter:saturate(.85) contrast(1.05);}
+  .hero-slide.active img{animation:kenburns 12s linear both;}
+  @keyframes kenburns{from{transform:scale(1.16) translate3d(1.5%,1%,0);}to{transform:scale(1.02) translate3d(-1%,-1.2%,0);}}
+  .hero-scrim{position:absolute;inset:0;background:
+      linear-gradient(102deg,rgba(11,26,21,.95) 0%,rgba(11,26,21,.86) 34%,rgba(11,26,21,.42) 66%,rgba(11,26,21,.66) 100%),
+      linear-gradient(180deg,rgba(11,26,21,.7) 0%,rgba(11,26,21,0) 28%,rgba(11,26,21,.86) 100%);}
+  .hero-grain{position:absolute;inset:0;opacity:.16;mix-blend-mode:overlay;
+    background-image:radial-gradient(rgba(255,255,255,.9) .5px,transparent .5px);background-size:3px 3px;}
+  #hero-3d{position:absolute;right:-4%;top:0;width:62%;height:100%;z-index:2;pointer-events:none;}
+  #villa-canvas{width:100%;height:100%;display:block;}
+  .hero-inner{position:relative;z-index:4;width:min(1320px,100% - clamp(22px,5vw,80px));margin-inline:auto;padding:132px 0 clamp(40px,7vh,84px);}
+  .hero-tag{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+  .hero-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--copper);box-shadow:0 0 0 0 rgba(194,98,44,.7);animation:pulse 2.6s infinite;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(194,98,44,.6);}70%{box-shadow:0 0 0 13px rgba(194,98,44,0);}100%{box-shadow:0 0 0 0 rgba(194,98,44,0);}}
+  h1.hero-title{font-size:clamp(3.15rem,8.4vw,8.15rem);margin:0 0 26px;max-width:14ch;}
+  h1.hero-title em{font-style:italic;font-weight:300;color:var(--copper-soft);}
+  .hero-sub{max-width:47ch;font-size:clamp(15px,1.5vw,19px);color:rgba(243,238,230,.82);line-height:1.7;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;}
+  .hero-actions .btn-ghost{background:rgba(11,26,21,.38);backdrop-filter:blur(7px);text-shadow:0 1px 8px rgba(0,0,0,.35);}
+  .hero-call{display:inline-flex;align-items:center;gap:9px;margin-top:22px;font-size:13px;font-weight:600;letter-spacing:.04em;color:rgba(243,238,230,.78);transition:color .35s;}
+  .hero-call svg{width:15px;height:15px;color:var(--copper-soft);flex:none;}
+  .hero-call:hover{color:var(--copper-soft);}
+  .hero-call span{border-bottom:1px solid rgba(224,160,117,.45);padding-bottom:2px;}
+  .hero-meta{margin-top:clamp(38px,6vh,64px);border-top:1px solid var(--hair-light);padding-top:22px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;}
+  @media(min-width:1024px){ .hero-meta{max-width:calc(100% - 300px);} }
+  .hero-meta .k{font-family:'Fraunces',serif;font-size:clamp(24px,3vw,38px);line-height:1;font-variant-numeric:tabular-nums;}
+  .hero-meta .v{margin-top:8px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(243,238,230,.62);font-weight:600;}
+  .hero-caption{position:absolute;right:clamp(22px,5vw,80px);bottom:clamp(148px,17vh,190px);z-index:5;text-align:right;max-width:270px;}
+  .hero-caption .cap-line{width:100%;height:2px;background:rgba(243,238,230,.22);margin-bottom:12px;overflow:hidden;}
+  .hero-caption .cap-line i{display:block;height:100%;background:var(--copper);width:0;}
+  .hero-caption .cap-line i.run{animation:capbar 10s linear both;}
+  @keyframes capbar{from{width:0;}to{width:100%;}}
+  .hero-caption .cap-title{font-family:'Fraunces',serif;font-size:19px;line-height:1.25;}
+  .hero-caption .cap-sub{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(243,238,230,.6);margin-top:7px;font-weight:600;}
+  .hero-3d-tag{position:absolute;right:clamp(22px,5vw,80px);top:clamp(96px,12vh,124px);z-index:5;display:flex;align-items:center;gap:9px;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:rgba(243,238,230,.62);}
+  .hero-3d-tag i{width:6px;height:6px;background:var(--copper);transform:rotate(45deg);flex:none;animation:pulse 2.8s infinite;}
+  @media(max-width:1023px){.hero-3d-tag{display:none;}}
+  @media(max-width:1023px){
+    #hero-3d{right:-18%;width:118%;opacity:.55;}
+    .hero-caption{display:none;}
+    .hero-meta{grid-template-columns:repeat(2,1fr);gap:22px 14px;}
+  }
+
+  /* ---------- Marquee ---------- */
+  .marquee{background:var(--ink);color:var(--paper);padding:17px 0;overflow:hidden;white-space:nowrap;border-block:1px solid var(--ink);}
+  .marquee-track{display:inline-flex;gap:44px;animation:slide 42s linear infinite;}
+  .marquee:hover .marquee-track{animation-play-state:paused;}
+  .marquee span{font-family:'Fraunces',serif;font-size:15px;letter-spacing:.16em;text-transform:uppercase;display:inline-flex;align-items:center;gap:44px;}
+  .marquee span::after{content:"";width:6px;height:6px;background:var(--copper);transform:rotate(45deg);display:inline-block;}
+  @keyframes slide{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  /* ---------- Sections ---------- */
+  section{position:relative;}
+  .sec-pad{padding:clamp(72px,11vw,148px) 0;}
+  .sec-head{display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:start;}
+  @media(max-width:880px){.sec-head{grid-template-columns:1fr;gap:22px;}}
+  .eyebrow{display:flex;align-items:center;gap:12px;color:var(--copper);}
+  .eyebrow .idx{font-family:'Fraunces',serif;font-size:11px;letter-spacing:.18em;}
+  .eyebrow .line{flex:1;height:1px;background:currentColor;opacity:.4;max-width:70px;}
+  h2.sec-title{font-size:clamp(2.35rem,5.3vw,4.65rem);margin:16px 0 0;}
+  .lead{font-size:clamp(17px,1.85vw,23px);line-height:1.62;color:#3B3A33;font-family:'Fraunces',serif;font-weight:300;}
+
+  /* ---------- Manifesto ---------- */
+  .manifesto{background:var(--paper);}
+  .man-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(18px,2.6vw,34px);align-items:end;}
+  .man-img-a{grid-column:1/6;position:relative;}
+  .man-img-b{grid-column:6/9;position:relative;transform:translateY(46px);}
+  .man-copy{grid-column:9/13;}
+  .gcol-a{grid-column:1/7;}
+  .gcol-b{grid-column:8/13;}
+  .man-img-a img,.man-img-b img{width:100%;height:clamp(300px,42vw,560px);object-fit:cover;}
+  .man-img-b img{height:clamp(220px,28vw,360px);}
+  .frame{overflow:hidden;position:relative;}
+  .frame img{transition:transform 1.4s var(--ease);}
+  .frame:hover img{transform:scale(1.06);}
+  .stamp{
+    position:absolute;left:-14px;bottom:-14px;width:104px;height:104px;border-radius:50%;
+    background:var(--copper);color:#fff;display:grid;place-content:center;text-align:center;
+    font-size:9.5px;letter-spacing:.19em;font-weight:700;line-height:1.7;text-transform:uppercase;
+    animation:spinstamp 26s linear infinite;
+  }
+  @keyframes spinstamp{to{transform:rotate(360deg);}}
+  @media(max-width:880px){
+    .man-img-a,.gcol-a{grid-column:1/13;} .man-img-b{grid-column:1/13;transform:none;} .man-copy,.gcol-b{grid-column:1/13;}
+    .man-img-b img{height:280px;}
+  }
+
+  /* ---------- Featured bands ---------- */
+  .band{position:relative;border-top:1px solid var(--hair);}
+  .band-inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:0;align-items:stretch;}
+  .band:nth-child(even) .band-media{order:2;}
+  .band-media{position:relative;overflow:hidden;min-height:clamp(340px,52vw,660px);}
+  .band-media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform 1.6s var(--ease);}
+  .band:hover .band-media img{transform:scale(1.05);}
+  .band-media .tagchip{position:absolute;top:22px;left:22px;background:rgba(11,26,21,.72);color:var(--cream);padding:8px 14px;backdrop-filter:blur(6px);}
+  .band-body{padding:clamp(30px,4.4vw,68px);display:flex;flex-direction:column;justify-content:center;position:relative;}
+  .band-price{font-family:'Fraunces',serif;font-size:clamp(3.1rem,7.4vw,6.6rem);line-height:.85;letter-spacing:-.045em;color:var(--copper);font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .band-price sup{font-size:.34em;vertical-align:super;letter-spacing:0;font-weight:500;}
+  .band h3{font-family:'Fraunces',serif;font-size:clamp(1.65rem,2.7vw,2.55rem);line-height:1.06;letter-spacing:-.025em;margin:16px 0 8px;font-weight:500;}
+  .spec-ledger{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--hair);margin-top:26px;}
+  .spec-ledger div{padding:15px 12px 0 0;border-right:1px solid var(--hair);}
+  .spec-ledger div:last-child{border-right:0;}
+  .spec-ledger .sv{font-family:'Fraunces',serif;font-size:22px;line-height:1.1;}
+  .spec-ledger .sk{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe);font-weight:700;margin-top:5px;}
+  @media(max-width:960px){
+    .band-inner{grid-template-columns:1fr;}
+    .band:nth-child(even) .band-media{order:0;}
+    .band-media{min-height:320px;}
+  }
+
+  /* ---------- Payment ledger ---------- */
+  .plans{background:var(--pine-deep);color:var(--cream);}
+  .plans .rule{background:var(--hair-light);}
+  .plan-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--hair-light);}
+  .plan{padding:clamp(28px,3.6vw,54px) clamp(20px,2.6vw,44px);border-right:1px solid var(--hair-light);position:relative;overflow:hidden;transition:background .6s var(--ease);}
+  .plan:last-child{border-right:0;}
+  .plan::before{content:"";position:absolute;inset:auto 0 0 0;height:2px;background:var(--copper);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease);}
+  .plan:hover{background:rgba(243,238,230,.05);}
+  .plan:hover::before{transform:scaleX(1);}
+  .plan .p-name{font-family:'Fraunces',serif;font-size:clamp(1.65rem,2.5vw,2.35rem);margin:14px 0 6px;}
+  .plan{min-width:0;}
+  .plan .p-amount{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;font-family:'Fraunces',serif;font-size:clamp(2.85rem,5.6vw,5rem);line-height:1.02;letter-spacing:-.045em;color:var(--copper-soft);font-variant-numeric:tabular-nums;overflow-wrap:break-word;}
+  .plan .p-amount small{display:inline-block;font-size:clamp(10px,.95vw,12.5px);line-height:1.6;letter-spacing:.15em;text-transform:uppercase;color:rgba(243,238,230,.82);font-family:'Archivo',sans-serif;font-weight:700;white-space:normal;transform:translateY(-.18em);}
+  .plan .p-amount sup{font-size:.34em;vertical-align:super;letter-spacing:0;}
+  .plan .opt-badge{display:inline-flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--copper-soft);}
+  .plan .opt-badge i{width:18px;height:1px;background:currentColor;opacity:.55;display:inline-block;}
+  .plan-b{background:rgba(243,238,230,.045);}
+  .plan ul{list-style:none;padding:0;margin:24px 0 0;}
+  .plan li{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-top:1px solid var(--hair-light);font-size:14.5px;line-height:1.6;color:rgba(243,238,230,.9);}
+  .plan li > span:last-child{min-width:0;overflow-wrap:break-word;}
+  .plan li b{color:#fff;font-weight:600;}
+  .plan li .tick{flex:none;width:6px;height:6px;margin-top:8px;background:var(--copper);transform:rotate(45deg);border-radius:1px;font-size:0;line-height:0;overflow:hidden;color:transparent;}
+  @media(max-width:520px){
+    .plan .p-amount{font-size:clamp(2.5rem,11vw,3.3rem);}
+    .plan .p-amount small{flex-basis:100%;transform:none;}
+  }
+  @media(max-width:820px){.plan-grid{grid-template-columns:1fr;}.plan{border-right:0;border-bottom:1px solid var(--hair-light);}}
+
+  /* ---------- Calculator ---------- */
+  .calc{background:var(--cream);border:1px solid var(--hair);}
+  .calc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+  .calc-left{padding:clamp(26px,3.4vw,52px);border-right:1px solid var(--hair);}
+  .calc-right{padding:clamp(26px,3.4vw,52px);background:var(--paper-2);}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:2px;background:var(--hair);outline:none;margin:26px 0 10px;}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--copper);cursor:grab;border:3px solid var(--cream);box-shadow:0 4px 18px rgba(194,98,44,.4);}
+  input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:var(--copper);cursor:grab;border:3px solid var(--cream);}
+  .calc-out{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px;padding:15px 0;border-bottom:1px solid var(--hair);}
+  .calc-out .val{font-family:'Fraunces',serif;font-size:clamp(1.45rem,2.4vw,2.05rem);line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.03em;text-align:right;overflow-wrap:anywhere;max-width:100%;}
+  .calc-out.hero-out{padding-bottom:20px;}
+  .calc-out.hero-out .val{color:var(--copper);font-size:clamp(1.9rem,3.6vw,3rem);line-height:1.1;max-width:100%;}
+  @media(max-width:820px){.calc-grid{grid-template-columns:1fr;}.calc-left{border-right:0;border-bottom:1px solid var(--hair);}}
+
+  /* ---------- Process steps ---------- */
+  .steps{border-top:1px solid var(--hair);}
+  .step{display:grid;grid-template-columns:110px minmax(0,.85fr) minmax(0,1.25fr);gap:clamp(16px,3vw,44px);padding:clamp(26px,3.2vw,44px) 0;border-bottom:1px solid var(--hair);align-items:start;transition:background .5s var(--ease);}
+  .step:hover{background:rgba(194,98,44,.05);}
+  .step .snum{font-family:'Fraunces',serif;font-size:clamp(2.4rem,4.6vw,4.15rem);line-height:.85;color:var(--copper);font-variant-numeric:tabular-nums;}
+  .step h4{font-family:'Fraunces',serif;font-size:clamp(1.25rem,2.1vw,1.85rem);margin:0;font-weight:500;letter-spacing:-.02em;}
+  .step p{margin:0;color:#4A473F;}
+  @media(max-width:760px){.step{grid-template-columns:1fr;gap:12px;}}
+
+  /* ---------- Listing rows ---------- */
+  .filters{display:flex;flex-wrap:wrap;gap:10px;}
+  .chip{padding:11px 20px;border:1px solid var(--hair);background:transparent;cursor:pointer;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;transition:all .4s var(--ease);}
+  .chip:hover{border-color:var(--ink);}
+  .chip.on{background:var(--ink);color:var(--cream);border-color:var(--ink);}
+  .listing{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(20px,3.4vw,58px);padding:clamp(28px,3.6vw,58px) 0;border-top:1px solid var(--hair);align-items:center;}
+  .listing:nth-child(even) .l-media{order:2;}
+  .l-media{position:relative;overflow:hidden;aspect-ratio:16/11;}
+  .l-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease);}
+  .listing:hover .l-media img{transform:scale(1.06);}
+  .l-media .badge{position:absolute;left:0;bottom:0;background:var(--paper);padding:11px 18px;}
+  .l-price{font-family:'Fraunces',serif;font-size:clamp(2.55rem,5vw,4.25rem);line-height:.9;letter-spacing:-.045em;color:var(--copper);font-variant-numeric:tabular-nums;}
+  .l-price sup{font-size:.36em;vertical-align:super;}
+  .listing h3{font-family:'Fraunces',serif;font-size:clamp(1.55rem,2.5vw,2.15rem);margin:12px 0 6px;font-weight:500;letter-spacing:-.025em;}
+  .l-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+  @media(max-width:900px){.listing{grid-template-columns:1fr;}.listing:nth-child(even) .l-media{order:0;}}
+
+  /* ---------- Testimonials ---------- */
+  .quotes{background:var(--pine);color:var(--cream);}
+  .quote-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--hair-light);border:1px solid var(--hair-light);}
+  .quote{background:var(--pine);padding:clamp(26px,3vw,44px);transition:background .5s var(--ease);}
+  .quote:hover{background:var(--pine-light);}
+  .quote p{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(17px,1.75vw,21px);line-height:1.58;margin:18px 0 26px;}
+  .quote .who{display:flex;align-items:center;gap:13px;}
+  .quote .av{width:42px;height:42px;border-radius:50%;object-fit:cover;flex:none;}
+  @media(max-width:900px){.quote-grid{grid-template-columns:1fr;}}
+
+  /* ---------- CTA band ---------- */
+  .cta-band{position:relative;overflow:hidden;background:var(--ink);color:var(--cream);}
+  .cta-band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.3;}
+  .cta-inner{position:relative;z-index:2;text-align:center;padding:clamp(70px,10vw,140px) 0;}
+  .cta-inner h2{font-size:clamp(2.5rem,7vw,6.25rem);margin:18px auto 26px;max-width:16ch;}
+
+  /* ---------- Forms ---------- */
+  .form-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(26px,4vw,72px);}
+  @media(max-width:940px){.form-grid{grid-template-columns:1fr;}}
+  .field{position:relative;margin-bottom:26px;}
+  .field label{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--taupe);margin-bottom:9px;}
+  .field input,.field select,.field textarea{
+    width:100%;padding:15px 2px;background:transparent;border:0;border-bottom:1px solid var(--hair);
+    font-size:16.5px;outline:none;transition:border-color .4s,background .4s;border-radius:0;
+    color:var(--ink);color-scheme:light;
+  }
+  .field select{
+    -webkit-appearance:none;appearance:none;padding-right:26px;cursor:pointer;
+    background-image:linear-gradient(45deg,transparent 50%,var(--taupe) 50%),linear-gradient(135deg,var(--taupe) 50%,transparent 50%);
+    background-position:calc(100% - 8px) calc(50% + 1px),calc(100% - 3px) calc(50% + 1px);
+    background-size:5px 5px,5px 5px;background-repeat:no-repeat;
+  }
+  .field select option{background-color:#FFFFFF;color:#12130F;font-size:15.5px;padding:8px;}
+  .field select option:checked{background-color:#F3EEE6;color:#12130F;}
+  .field textarea{resize:vertical;min-height:120px;}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--copper);}
+  .field.two{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .radio-row{display:flex;flex-wrap:wrap;gap:11px;}
+  .radio-row label{
+    display:inline-flex;align-items:center;gap:9px;padding:12px 19px;border:1px solid var(--hair);
+    cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+    transition:all .35s var(--ease);margin:0;color:var(--ink);
+  }
+  .radio-row input{accent-color:var(--copper);width:15px;height:15px;}
+  .radio-row label{background:rgba(251,248,242,.6);color:var(--ink);line-height:1.4;}
+  .radio-row label:has(input:checked),
+  .radio-row label.is-checked{background:var(--ink);color:var(--cream);border-color:var(--ink);}
+  .radio-row label:has(input:checked) input,
+  .radio-row label.is-checked input{accent-color:var(--copper-soft);}
+  .radio-row label input{flex:none;}
+  .form-note{font-size:12.5px;color:var(--taupe);margin-top:16px;line-height:1.7;}
+  .form-status{margin-top:20px;padding:18px 22px;border-left:2px solid var(--copper);background:rgba(194,98,44,.09);display:none;}
+  .form-status.show{display:block;animation:pageIn .6s var(--ease) both;}
+  .form-status.err{border-color:#B33A2B;background:rgba(179,58,43,.09);}
+  .spinner{width:15px;height:15px;border:2px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite;display:none;}
+  .btn.loading .spinner{display:block;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .info-panel{background:var(--pine-deep);color:var(--cream);padding:clamp(28px,3.4vw,50px);position:relative;overflow:hidden;}
+  .info-panel .row{padding:19px 0;border-top:1px solid var(--hair-light);}
+  .info-panel .row:first-of-type{border-top:0;}
+  .info-panel a{overflow-wrap:anywhere;}
+
+  /* ---------- Accordion ---------- */
+  details{border-top:1px solid var(--hair);}
+  details:last-of-type{border-bottom:1px solid var(--hair);}
+  summary{list-style:none;cursor:pointer;padding:26px 44px 26px 0;position:relative;font-family:'Fraunces',serif;font-size:clamp(17px,2vw,23px);letter-spacing:-.015em;transition:color .35s;}
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"";position:absolute;right:8px;top:50%;width:13px;height:1.5px;background:currentColor;transform:translateY(-50%);}
+  summary::before{content:"";position:absolute;right:14px;top:50%;width:1.5px;height:13px;background:currentColor;transform:translateY(-50%);transition:transform .45s var(--ease);}
+  details[open] summary::before{transform:translateY(-50%) rotate(90deg);}
+  summary:hover{color:var(--copper);}
+  details .ans{padding:0 12% 28px 0;color:#4A473F;animation:pageIn .55s var(--ease) both;}
+
+  /* ---------- Floating contact dock ---------- */
+  .contact-dock{position:fixed;right:clamp(14px,2.4vw,28px);bottom:clamp(14px,2.4vw,26px);z-index:68;display:flex;flex-direction:column;align-items:flex-end;gap:9px;}
+  .dock-btn{
+    display:inline-flex;align-items:center;gap:10px;padding:11px 16px;border-radius:100px;
+    background:rgba(11,26,21,.94);color:var(--cream);border:1px solid rgba(243,238,230,.22);
+    backdrop-filter:blur(12px);font-size:11.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;
+    box-shadow:0 12px 30px rgba(11,26,21,.26);transition:transform .45s var(--ease),background .35s,color .35s,border-color .35s;
+  }
+  .dock-btn svg{width:17px;height:17px;flex:none;color:var(--copper-soft);}
+  .dock-btn:hover{background:var(--copper);border-color:var(--copper);color:#fff;transform:translateY(-3px);}
+  .dock-btn:hover svg{color:#fff;}
+  .dock-btn.call .num{font-family:'Archivo',sans-serif;letter-spacing:.045em;font-size:12.5px;text-transform:none;}
+  .dock-btn .dock-lbl{display:none;}
+  @media(min-width:640px){.dock-btn .dock-lbl{display:inline;}}
+  @media(max-width:639px){.dock-btn.call .num{display:none;}}
+  .dock-ping{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--copper);top:-2px;right:-2px;box-shadow:0 0 0 0 rgba(194,98,44,.65);animation:pulse 2.4s infinite;}
+
+  /* ---------- Legal pages ---------- */
+  .legal-sec{padding:clamp(44px,6vw,84px) 0 clamp(64px,9vw,120px);}
+  .legal-grid{display:grid;grid-template-columns:262px minmax(0,1fr);gap:clamp(26px,5vw,76px);align-items:start;}
+  .legal-toc{position:sticky;top:100px;border-top:1px solid var(--ink);padding-top:18px;}
+  .legal-toc .label{color:var(--copper);margin-bottom:14px;}
+  .legal-toc a{display:block;padding:7px 0;font-size:13px;color:#4A473F;border-bottom:1px solid rgba(18,19,15,.07);transition:color .3s,padding-left .35s var(--ease);}
+  .legal-toc a:hover{color:var(--copper);padding-left:5px;}
+  .legal-toc button{transition:color .3s,padding-left .35s var(--ease);}
+  .legal-toc button:hover{color:var(--copper) !important;padding-left:5px !important;}
+  .legal-toc .legal-contact{margin-top:22px;padding:16px;background:var(--paper-2);border:1px solid var(--hair);}
+  .legal-toc .legal-contact a{font-size:12.5px;border:0;padding:3px 0;word-break:break-word;}
+  .legal-intro{border-left:2px solid var(--copper);padding:2px 0 2px 20px;margin-bottom:34px;font-family:'Fraunces',serif;font-weight:300;font-size:clamp(17px,1.9vw,21px);line-height:1.65;color:#3B3A33;}
+  .legal-body{max-width:74ch;}
+  .legal-body h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(1.35rem,2.3vw,1.8rem);letter-spacing:-.02em;line-height:1.2;margin:clamp(34px,4vw,48px) 0 14px;padding-top:clamp(18px,2.4vw,26px);border-top:1px solid var(--hair);scroll-margin-top:100px;}
+  .legal-body h2:first-of-type{margin-top:0;border-top:0;padding-top:0;}
+  .legal-body h3{font-family:'Archivo',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin:26px 0 10px;color:var(--pine);}
+  .legal-body p,.legal-body li{font-size:15px;line-height:1.82;color:#4A473F;}
+  .legal-body p{margin:0 0 15px;}
+  .legal-body ul,.legal-body ol{padding-left:20px;margin:0 0 18px;}
+  .legal-body li{margin-bottom:8px;padding-left:2px;}
+  .legal-body li::marker{color:var(--copper);}
+  .legal-body strong{color:var(--ink);font-weight:600;}
+  .legal-body a{color:var(--copper);text-decoration:underline;text-underline-offset:3px;}
+  .legal-meta{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:30px;}
+  .legal-meta span{border:1px solid var(--hair);padding:7px 13px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--taupe);}
+  .legal-callout{background:var(--cream);border:1px solid var(--hair);border-left:3px solid var(--copper);padding:20px 24px;margin:24px 0;}
+  .legal-callout p{margin:0;font-size:14.5px;}
+  @media(max-width:880px){
+    .legal-grid{grid-template-columns:1fr;}
+    .legal-toc{position:static;border-top:0;border-left:1px solid var(--hair);padding:0 0 0 16px;}
+    .legal-toc a{display:inline-block;margin-right:16px;border-bottom:0;}
+  }
+
+  /* ---------- Live 3D globe ---------- */
+  .globe-band{position:relative;background:var(--pine-deep);color:var(--cream);overflow:hidden;padding:clamp(62px,9vw,124px) 0;border-top:1px solid rgba(243,238,230,.08);}
+  .globe-glow{position:absolute;width:76vw;height:76vw;max-width:900px;max-height:900px;left:-12%;top:50%;transform:translateY(-50%);background:radial-gradient(circle,rgba(47,107,88,.42),rgba(11,26,21,0) 64%);pointer-events:none;}
+  .globe-bigword{position:absolute;right:-1.5%;bottom:-.8vw;font-size:clamp(3.6rem,13.5vw,13rem);letter-spacing:-.05em;color:rgba(243,238,230,.032);white-space:nowrap;pointer-events:none;line-height:.82;user-select:none;}
+  .globe-grid{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(26px,5vw,76px);align-items:center;position:relative;z-index:2;}
+  .globe-stage{position:relative;width:100%;max-width:640px;aspect-ratio:1;margin-inline:auto;}
+  .globe-stage::before{content:"";position:absolute;inset:5%;border-radius:50%;background:radial-gradient(circle at 38% 32%, rgba(47,107,88,.45), rgba(11,26,21,0) 68%);}
+  #globe-canvas{position:relative;z-index:2;display:block;width:100%;height:100%;touch-action:none;cursor:grab;outline:none;}
+  #globe-canvas:focus-visible{outline:1px solid var(--copper);outline-offset:6px;border-radius:50%;}
+  #globe-canvas:active{cursor:grabbing;}
+  .globe-ring{position:absolute;left:50%;top:50%;border:1px solid rgba(224,160,117,.16);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;}
+  .globe-ring.r1{width:76%;height:76%;animation:globeRing 30s linear infinite;}
+  .globe-ring.r2{width:91%;height:91%;border-style:dashed;border-color:rgba(243,238,230,.1);animation:globeRing 48s linear infinite reverse;}
+  .globe-ring.r3{width:103%;height:103%;border-color:rgba(243,238,230,.045);}
+  @keyframes globeRing{from{transform:translate(-50%,-50%) rotate(0);}to{transform:translate(-50%,-50%) rotate(360deg);}}
+  .globe-hud{position:absolute;z-index:3;display:flex;align-items:center;gap:10px;background:rgba(11,26,21,.62);backdrop-filter:blur(9px);border:1px solid rgba(243,238,230,.14);padding:10px 13px;}
+  .hud-tl{top:8px;left:8px;}
+  .hud-br{bottom:8px;right:8px;color:rgba(243,238,230,.58);background:transparent;border-color:transparent;backdrop-filter:none;}
+  .hud-br svg{width:17px;height:17px;color:var(--copper-soft);flex:none;}
+  .hud-val{font-family:'Fraunces',serif;font-size:15px;line-height:1.15;}
+  .live-dot{width:6px;height:6px;border-radius:50%;background:var(--copper);flex:none;animation:pulse 2.4s infinite;}
+  .globe-cities{margin-top:30px;border-top:1px solid rgba(243,238,230,.18);}
+  .city-row{width:100%;display:grid;grid-template-columns:14px minmax(0,1fr) auto;align-items:center;gap:12px;text-align:left;background:transparent;border:0;border-bottom:1px solid rgba(243,238,230,.12);color:var(--cream);padding:13px 2px;cursor:pointer;font-family:inherit;transition:background .4s var(--ease),padding .4s var(--ease);}
+  .city-row:hover,.city-row:focus-visible,.city-row.on{background:rgba(194,98,44,.13);padding-left:10px;padding-right:8px;outline:none;}
+  .city-mark{width:7px;height:7px;border-radius:50%;background:var(--copper);box-shadow:0 0 0 3px rgba(194,98,44,.18);transition:transform .4s var(--ease);}
+  .city-row:hover .city-mark,.city-row.on .city-mark{transform:scale(1.3);}
+  .city-name{font-size:14.5px;font-weight:600;line-height:1.25;}
+  .city-name em{display:block;font-style:normal;font-size:9px;letter-spacing:.19em;text-transform:uppercase;color:rgba(243,238,230,.44);margin-top:3px;font-weight:700;}
+  .city-price{font-size:17px;color:var(--copper-soft);letter-spacing:-.01em;white-space:nowrap;}
+  .globe-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(243,238,230,.16);border:1px solid rgba(243,238,230,.16);margin-top:30px;}
+  .globe-stats>div{background:var(--pine-deep);padding:16px clamp(10px,1.6vw,18px);}
+  .gs-num{font-family:'Fraunces',serif;font-size:clamp(1.45rem,2.6vw,2.05rem);line-height:1;letter-spacing:-.03em;}
+  .globe-hint{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,238,230,.42);margin:16px 0 0;font-weight:600;line-height:1.7;}
+  .globe-hint b{color:var(--copper-soft);font-weight:700;}
+  @media(max-width:900px){
+    .globe-grid{grid-template-columns:1fr;gap:34px;}
+    .globe-stage{max-width:470px;}
+    .globe-cities{margin-top:24px;}
+    .city-price{font-size:16px;}
+  }
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--pine-deep);color:rgba(243,238,230,.72);padding:clamp(56px,7vw,96px) 0 30px;overflow:hidden;}
+  .foot-word{font-family:'Fraunces',serif;font-size:clamp(2.9rem,12.5vw,11.5rem);line-height:.82;letter-spacing:-.05em;color:rgba(243,238,230,.1);white-space:nowrap;margin-bottom:clamp(30px,5vw,62px);user-select:none;}
+  .foot-grid{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));gap:clamp(22px,3vw,48px);padding-bottom:44px;}
+  .foot-grid h5{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--copper-soft);margin:0 0 18px;font-weight:700;}
+  .foot-grid a{display:block;padding:6px 0;font-size:14px;transition:color .35s,transform .45s var(--ease);overflow-wrap:anywhere;}
+  .foot-grid a:hover{color:var(--cream);transform:translateX(5px);}
+  .foot-bottom{border-top:1px solid var(--hair-light);padding-top:24px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;}
+  @media(max-width:880px){.foot-grid{grid-template-columns:1fr 1fr;}}
+  @media(min-width:1024px){.foot-bottom{padding-right:260px;}}
+  @media(max-width:1023px){footer{padding-bottom:118px;}}
+
+  /* ---------- Inner page hero ---------- */
+  .page-hero{position:relative;background:var(--pine-deep);color:var(--cream);padding:clamp(126px,16vw,190px) 0 clamp(52px,7vw,92px);overflow:hidden;}
+  .page-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.36;}
+  .page-hero .sc{position:absolute;inset:0;background:linear-gradient(92deg,rgba(11,26,21,.94),rgba(11,26,21,.55));}
+  .page-hero .inner{position:relative;z-index:3;}
+  .page-hero h1{font-size:clamp(2.85rem,7.4vw,6.55rem);margin:18px 0 0;max-width:15ch;}
+
+  /* ---------- Misc ---------- */
+  .ticker-strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);}
+  .ticker-strip > div{padding:clamp(22px,3vw,42px) clamp(12px,2vw,30px);border-right:1px solid var(--hair);}
+  .ticker-strip > div:last-child{border-right:0;}
+  .ticker-strip .big{font-family:'Fraunces',serif;font-size:clamp(1.95rem,4vw,3.35rem);line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.035em;}
+  @media(max-width:760px){.ticker-strip{grid-template-columns:1fr 1fr;}.ticker-strip > div:nth-child(2n){border-right:0;}}
+  .gallery-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;}
+  .gallery-strip .gs{position:relative;overflow:hidden;aspect-ratio:1/1;}
+  .gallery-strip img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),opacity .8s;}
+  .gallery-strip .gs:hover img{transform:scale(1.08);}
+  .gallery-strip .gs .gcap{position:absolute;left:0;right:0;bottom:0;padding:16px;background:linear-gradient(0deg,rgba(11,26,21,.85),transparent);color:var(--cream);}
+  @media(max-width:760px){.gallery-strip{grid-template-columns:1fr 1fr;}}
+  .scroll-cue{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:5;display:flex;flex-direction:column;align-items:center;gap:9px;}
+  .scroll-cue .l{width:1px;height:52px;background:linear-gradient(180deg,transparent,rgba(243,238,230,.7));position:relative;overflow:hidden;}
+  .scroll-cue .l::after{content:"";position:absolute;top:-52px;left:0;width:100%;height:52px;background:var(--copper);animation:cue 2.4s var(--ease) infinite;}
+  @keyframes cue{0%{top:-52px;}60%,100%{top:52px;}}
+  @media(max-width:1023px){.scroll-cue{display:none;}}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.15s !important;}
+    html{scroll-behavior:auto;}
+    .js .reveal{opacity:1;transform:none;}
+    .js .reveal-line > *{transform:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wipe" id="wipe"></div>
+
+<!-- ================= LEFT INDEX RAIL ================= -->
+<aside class="rail" id="rail">
+  <a href="#/home" aria-label="Vanguard Estates home">
+    <svg class="rail-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+      <rect x="1" y="1" width="46" height="46" stroke="currentColor" stroke-opacity=".45"/>
+      <path d="M11 13 L24 35 L37 13" stroke="currentColor" stroke-width="2.2" fill="none"/>
+      <path d="M24 35 L24 41" stroke="#C2622C" stroke-width="2.2"/>
+    </svg>
+  </a>
+  <div class="rail-word">Vanguard Estates · Global Homes</div>
+  <div class="rail-plate" id="railPlate">01</div>
+</aside>
+
+<!-- ================= HEADER ================= -->
+<header id="header" class="at-top">
+  <div class="inner">
+    <div class="bar">
+      <a class="logo" href="#/home">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="46" height="46" stroke="currentColor" stroke-opacity=".5"/>
+          <path d="M11 13 L24 35 L37 13" stroke="currentColor" stroke-width="2.4" fill="none"/>
+          <path d="M24 35 L24 41" stroke="#C2622C" stroke-width="2.4"/>
+        </svg>
+        <div>Vanguard Estates<small>Homes · Worldwide</small></div>
+      </a>
+      <nav class="main" id="mainNav">
+        <a href="#/home" data-nav="home">Home</a>
+        <a href="#/properties" data-nav="properties">Properties</a>
+        <a href="#/payment" data-nav="payment">Payment Plans</a>
+        <a href="#/process" data-nav="process">Process</a>
+        <a href="#/contact" data-nav="contact">Contact</a>
+        <a href="tel:+19179991592" class="nav-phone">Call us · +1 (917) 999-1592</a>
+      </nav>
+      <a href="tel:+19179991592" class="header-phone" aria-label="Call Vanguard Estates on +1 917 999 1592">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6.6 3h3l1.5 4.2-2 1.4a13 13 0 006.3 6.3l1.4-2 4.2 1.5v3c0 1.1-.9 2-2 2A16.5 16.5 0 014.6 5c0-1.1.9-2 2-2z"/></svg>
+        <span>+1 (917) 999-1592</span>
+      </a>
+      <a href="#/contact" class="btn btn-copper header-cta magnetic"><span>Book Inspection · $200</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= FLOATING CONTACT DOCK ================= -->
+<div class="contact-dock">
+  <a class="dock-btn" href="sms:+19179991592?&body=Hello%20Vanguard%20Estates%2C%20I%27d%20like%20to%20enquire%20about%20a%20home." aria-label="Text Vanguard Estates on +1 917 999 1592">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4c-1.3 0-2.5-.2-3.6-.7L3 21l1.8-5a8.1 8.1 0 0 1-1.3-4.5 8.4 8.4 0 0 1 9-8.4 8.4 8.4 0 0 1 8.5 8.4z"/><path d="M8 10.5h8M8 14h5"/></svg>
+    <span class="dock-lbl">Text us</span>
+  </a>
+  <a class="dock-btn call" href="tel:+19179991592" aria-label="Call Vanguard Estates on +1 917 999 1592" style="position:relative">
+    <span class="dock-ping" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6.6 3h3l1.5 4.2-2 1.4a13 13 0 006.3 6.3l1.4-2 4.2 1.5v3c0 1.1-.9 2-2 2A16.5 16.5 0 014.6 5c0-1.1.9-2 2-2z"/></svg>
+    <span class="num">+1 (917) 999-1592</span>
+  </a>
+</div>
+
+<main>
+
+<!-- ================================================================
+     PAGE — HOME
+================================================================= -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg">
+      <div class="hero-slide active"><img src="https://images.pexels.com/photos/16573669/pexels-photo-16573669.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Modern luxury villa with lush greenery"></div>
+      <div class="hero-slide"><img src="https://images.pexels.com/photos/29334668/pexels-photo-29334668.png?auto=compress&cs=tinysrgb&w=1800" alt="Contemporary villa with pool and garden"></div>
+      <div class="hero-slide"><img src="https://images.pexels.com/photos/10647324/pexels-photo-10647324.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Modern villa with swimming pool and palms"></div>
+      <div class="hero-slide"><img src="https://images.pexels.com/photos/4870581/pexels-photo-4870581.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Tropical villa with pool and palm trees"></div>
+      <div class="hero-slide"><img src="https://images.pexels.com/photos/7031594/pexels-photo-7031594.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Contemporary villa facade with lawn"></div>
+      <div class="hero-slide"><img src="https://images.pexels.com/photos/8551197/pexels-photo-8551197.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Mediterranean houses on a rocky coastline"></div>
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-grain"></div>
+    <div id="hero-3d"><canvas id="villa-canvas"></canvas></div>
+    <div class="hero-3d-tag"><i></i> Live 3D residence · move your cursor</div>
+
+    <div class="hero-inner">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        <span class="label">Est. 2014 · Houston, Texas · Delivering to 21 countries</span>
+      </div>
+      <h1 class="hero-title display">Own a home<br>on any <em>continent.</em></h1>
+      <p class="hero-sub">Vanguard Estates buys, verifies and delivers affordable property to buyers everywhere. Homes start at <strong>$25,000</strong> — pay <strong>$5,000 monthly</strong> or settle in bulk and save 4%. A <strong>$200 inspection fee</strong> opens the file.</p>
+      <div class="hero-actions">
+        <a href="#/properties" class="btn btn-copper magnetic"><span>Browse the catalogue</span></a>
+        <a href="#/payment" class="btn btn-ghost magnetic" style="color:var(--cream)"><span>See payment plans</span></a>
+      </div>
+      <a href="tel:+19179991592" class="hero-call">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6.6 3h3l1.5 4.2-2 1.4a13 13 0 006.3 6.3l1.4-2 4.2 1.5v3c0 1.1-.9 2-2 2A16.5 16.5 0 014.6 5c0-1.1.9-2 2-2z"/></svg>
+        <span>Prefer to talk? Call or text +1 (917) 999-1592</span>
+      </a>
+
+      <div class="hero-meta">
+        <div><div class="k num" data-count="25000" data-prefix="$">$25,000</div><div class="v">Homes starting from</div></div>
+        <div><div class="k num" data-count="5000" data-prefix="$">$5,000</div><div class="v">Monthly payment plan</div></div>
+        <div><div class="k num" data-count="200" data-prefix="$">$200</div><div class="v">Inspection fee</div></div>
+        <div><div class="k num" data-count="21">21</div><div class="v">Countries served</div></div>
+      </div>
+    </div>
+
+    <div class="hero-caption">
+      <div class="cap-line"><i class="run" id="capBar"></i></div>
+      <div class="cap-title" id="capTitle">The Post Oak Residence — Houston, Texas</div>
+      <div class="cap-sub" id="capSub">Plate 01 · $174,000 · 5 Bed / 6 Bath</div>
+    </div>
+
+    <div class="scroll-cue">
+      <span class="label" style="opacity:.6">Scroll</span>
+      <span class="l"></span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Title verified</span><span>Inspection from $200</span><span>Homes from $25,000</span><span>$5,000 monthly plan</span><span>Bulk payment · save 4%</span><span>Global delivery</span>
+      <span>Title verified</span><span>Inspection from $200</span><span>Homes from $25,000</span><span>$5,000 monthly plan</span><span>Bulk payment · save 4%</span><span>Global delivery</span>
+    </div>
+  </div>
+
+  <!-- MANIFESTO -->
+  <section class="sec-pad manifesto">
+    <div class="wrap">
+      <div class="man-grid">
+        <div class="man-img-a reveal frame">
+          <img src="https://images.pexels.com/photos/17174767/pexels-photo-17174767.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Contemporary white and wooden villa exterior" loading="lazy">
+          <div class="stamp">Verified<br>Title<br>· 2026 ·</div>
+        </div>
+        <div class="man-img-b reveal frame" style="transition-delay:.14s">
+          <img src="https://images.pexels.com/photos/7546767/pexels-photo-7546767.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Modern living room with tall windows" loading="lazy">
+        </div>
+        <div class="man-copy">
+          <div class="eyebrow reveal"><span class="idx">01</span><span class="line"></span><span class="label">The house of record</span></div>
+          <h2 class="sec-title display reveal" style="transition-delay:.08s">Property,<br>without the<br>gatekeeping.</h2>
+          <p class="lead reveal" style="transition-delay:.16s;margin-top:26px">We were founded on one stubborn idea: a good home should not depend on which passport you carry. Our acquisition team works in Texas, Lisbon, Dubai and Bali — sourcing, inspecting and title-checking homes that ordinary people can actually afford.</p>
+          <p class="reveal" style="transition-delay:.22s;color:#4A473F">Every listing in this catalogue has been physically inspected by our own surveyors, priced in US dollars, and structured so you can choose how you pay. No hidden levies. No surprise closing costs. One inspection file, one contract, one set of keys.</p>
+          <div class="reveal" style="transition-delay:.28s;margin-top:34px;display:flex;gap:13px;flex-wrap:wrap">
+            <a href="#/process" class="btn btn-ink magnetic"><span>How it works</span></a>
+            <a href="#/contact" class="btn btn-ghost magnetic"><span>Speak to an advisor</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="wrap">
+    <div class="ticker-strip">
+      <div class="reveal"><div class="big num" data-count="4180">4,180</div><div class="label muted" style="margin-top:10px">Homes handed over</div></div>
+      <div class="reveal" style="transition-delay:.08s"><div class="big num" data-count="21">21</div><div class="label muted" style="margin-top:10px">Countries delivered</div></div>
+      <div class="reveal" style="transition-delay:.16s"><div class="big num" data-count="96" data-suffix="%">96%</div><div class="label muted" style="margin-top:10px">Inspections passed first visit</div></div>
+      <div class="reveal" style="transition-delay:.24s"><div class="big num" data-count="12" data-suffix=" yrs">12 yrs</div><div class="label muted" style="margin-top:10px">In the global market</div></div>
+    </div>
+  </div>
+
+  <!-- FEATURED BANDS -->
+  <section class="sec-pad" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow reveal"><span class="idx">02</span><span class="line"></span><span class="label">Featured plates</span></div>
+        </div>
+        <div>
+          <h2 class="sec-title display reveal">This season's<br>catalogue.</h2>
+          <p class="lead reveal" style="transition-delay:.1s;max-width:56ch">Four homes we would buy ourselves — each one inspected in person, priced in dollars, and available on the $5,000 monthly plan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="featuredBands" style="margin-top:clamp(46px,6vw,86px)"></div>
+
+  <!-- PAYMENT TEASER -->
+  <section class="sec-pad plans">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:clamp(38px,5vw,66px)">
+        <div>
+          <div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">03</span><span class="line"></span><span class="label">Two ways to pay</span></div>
+        </div>
+        <div>
+          <h2 class="sec-title display reveal">Choose the route<br>that suits your<br>cash flow.</h2>
+          <p class="lead reveal" style="transition-delay:.1s;color:rgba(243,238,230,.78);max-width:54ch">Every property in our catalogue can be taken either way. The monthly plan is fixed at $5,000 per instalment — the number of months simply follows the price of the home.</p>
+        </div>
+      </div>
+
+      <div class="plan-grid">
+        <div class="plan reveal">
+          <div class="opt-badge"><i></i>Option A · Plan 01</div>
+          <div class="p-name">The Monthly Plan</div>
+          <div class="p-amount num">$5,000<small>per month</small></div>
+          <ul>
+            <li><span class="tick">◆</span><span>Fixed <b>$5,000</b> instalment — never indexed, never raised.</span></li>
+            <li><span class="tick">◆</span><span>Take a <b>$25,000</b> home for 5 months, or an <b>$80,000</b> home for 16 months.</span></li>
+            <li><span class="tick">◆</span><span>Keys and occupancy released at <b>60%</b> of the balance paid.</span></li>
+            <li><span class="tick">◆</span><span>Zero interest. Zero arrangement fee. Written into the contract.</span></li>
+            <li><span class="tick">◆</span><span>Pause once per year for up to 60 days at no cost.</span></li>
+          </ul>
+          <a href="#/payment" class="btn btn-light magnetic" style="margin-top:32px"><span>Calculate my term</span></a>
+        </div>
+        <div class="plan plan-b reveal" style="transition-delay:.12s">
+          <div class="opt-badge"><i></i>Option B · Plan 02</div>
+          <div class="p-name">The Bulk Payment</div>
+          <div class="p-amount num">4%<small>off the total price</small></div>
+          <ul>
+            <li><span class="tick">◆</span><span>Settle the full amount and take <b>4% off</b> the catalogue price.</span></li>
+            <li><span class="tick">◆</span><span>Transfer, escrow or bank draft — held safely until title transfer.</span></li>
+            <li><span class="tick">◆</span><span>Fastest route: title deeds and keys inside <b>21 working days</b>.</span></li>
+            <li><span class="tick">◆</span><span>Legal, registry and courier fees included in the price.</span></li>
+            <li><span class="tick">◆</span><span>Full refund of the <b>$200</b> inspection fee on completion.</span></li>
+          </ul>
+          <a href="#/contact" class="btn btn-copper magnetic" style="margin-top:32px"><span>Request bulk quotation</span></a>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:34px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;border-top:1px solid var(--hair-light);padding-top:26px">
+        <p style="margin:0;max-width:62ch;color:rgba(243,238,230,.72);font-size:14.5px"><strong style="color:var(--cream)">Inspection fee — $200.</strong> Covers a physical survey, photographic report, title search and a video walkthrough. Fully refunded when you complete the purchase.</p>
+        <a href="#/contact" class="btn btn-ghost magnetic" style="color:var(--cream)"><span>Book an inspection</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="sec-pad">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:clamp(36px,4vw,60px)">
+        <div><div class="eyebrow reveal"><span class="idx">04</span><span class="line"></span><span class="label">The route to keys</span></div></div>
+        <div>
+          <h2 class="sec-title display reveal">Five steps.<br>No surprises.</h2>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="snum">01</div>
+          <h4>Choose your home</h4>
+          <p>Browse the catalogue or tell us your budget and preferred country. An advisor sends three matched options within 24 hours — with real photographs, floor areas and survey notes.</p>
+        </div>
+        <div class="step reveal">
+          <div class="snum">02</div>
+          <h4>Pay the $200 inspection</h4>
+          <p>Our surveyor visits the property, records a video walkthrough, checks the title registry and files a condition report. Nothing else is due until you have read that report.</p>
+        </div>
+        <div class="step reveal">
+          <div class="snum">03</div>
+          <h4>Pick your payment route</h4>
+          <p>Either the fixed $5,000 monthly plan or bulk payment with 4% off. Both routes are written into a single, plain-language contract signed by both parties.</p>
+        </div>
+        <div class="step reveal">
+          <div class="snum">04</div>
+          <h4>Documentation & transfer</h4>
+          <p>Our legal team prepares title transfer, registry filing and courier delivery of originals. International buyers receive apostilled copies alongside the deed pack.</p>
+        </div>
+        <div class="step reveal">
+          <div class="snum">05</div>
+          <h4>Collect your keys</h4>
+          <p>Keys are released in person or through our delivery partner. Remote handover includes a live video call from inside the property — you see every room before you sign.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY STRIP -->
+  <section style="padding-bottom:clamp(60px,8vw,110px)">
+    <div class="wrap">
+      <div class="eyebrow reveal" style="margin-bottom:26px"><span class="idx">05</span><span class="line"></span><span class="label">Interiors in the catalogue</span></div>
+    </div>
+    <div class="gallery-strip" id="galleryStrip">
+      <div class="gs"><img src="https://images.pexels.com/photos/28586197/pexels-photo-28586197.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Spacious modern living room with open kitchen" loading="lazy"><div class="gcap label">Living hall · Porto</div></div>
+      <div class="gs"><img src="https://images.pexels.com/photos/39829283/pexels-photo-39829283.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Elegant modern living room interior" loading="lazy"><div class="gcap label">Lounge · Austin</div></div>
+      <div class="gs"><img src="https://images.pexels.com/photos/6186848/pexels-photo-6186848.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Bright modern living room interior" loading="lazy"><div class="gcap label">Reading room · Melbourne</div></div>
+      <div class="gs"><img src="https://images.pexels.com/photos/280239/pexels-photo-280239.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Open plan living room with garden view" loading="lazy"><div class="gcap label">Open plan · Lisbon</div></div>
+    </div>
+  </section>
+
+  <!-- LIVE 3D GLOBE -->
+  <section class="globe-band" id="globalReach">
+    <div class="globe-glow" aria-hidden="true"></div>
+    <div class="globe-bigword display" aria-hidden="true">WORLDWIDE</div>
+    <div class="wrap globe-grid">
+      <div class="globe-stage reveal">
+        <div class="globe-ring r1" aria-hidden="true"></div>
+        <div class="globe-ring r2" aria-hidden="true"></div>
+        <div class="globe-ring r3" aria-hidden="true"></div>
+        <canvas id="globe-canvas" aria-label="Interactive 3D globe of Vanguard Estates markets. Drag to rotate."></canvas>
+        <div class="globe-hud hud-tl">
+          <span class="live-dot" aria-hidden="true"></span>
+          <div><div class="label">Live network</div><div class="hud-val">21 markets</div></div>
+        </div>
+        <div class="globe-hud hud-br">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M9 4 4 6v14l5-2 6 2 5-2V4l-5 2-6-2zM9 4v14M15 6v14"/></svg>
+          <span class="label">Drag to spin the globe</span>
+        </div>
+      </div>
+
+      <div class="globe-copy">
+        <div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">06</span><span class="line"></span><span class="label">Global reach</span></div>
+        <h2 class="sec-title display reveal" style="transition-delay:.06s">One desk.<br>Twenty-one<br>front doors.</h2>
+        <p class="lead reveal" style="transition-delay:.12s;color:rgba(243,238,230,.78)">Every arc below is a home we have surveyed, priced and handed over from our Houston desk. Distance is not a barrier — the paperwork travels faster than you think.</p>
+
+        <div class="globe-cities reveal" id="globeCities" style="transition-delay:.16s">
+          <button class="city-row" data-lat="29.76" data-lon="-95.37" data-name="Houston">
+            <span class="city-mark"></span><span class="city-name">Houston, USA<em>Head office</em></span><span class="city-price num">$174,000</span>
+          </button>
+          <button class="city-row" data-lat="38.72" data-lon="-9.14" data-name="Lisbon">
+            <span class="city-mark"></span><span class="city-name">Lisbon, Portugal<em>Cascais coast</em></span><span class="city-price num">$128,000</span>
+          </button>
+          <button class="city-row" data-lat="25.20" data-lon="55.27" data-name="Dubai">
+            <span class="city-mark"></span><span class="city-name">Dubai, UAE<em>Palm Court</em></span><span class="city-price num">$286,000</span>
+          </button>
+          <button class="city-row" data-lat="-8.65" data-lon="115.19" data-name="Bali">
+            <span class="city-mark"></span><span class="city-name">Bali, Indonesia<em>Villa Serena</em></span><span class="city-price num">$94,000</span>
+          </button>
+          <button class="city-row" data-lat="6.24" data-lon="-75.56" data-name="Medellín">
+            <span class="city-mark"></span><span class="city-name">Medellín, Colombia<em>Marlowe Court</em></span><span class="city-price num">$39,000</span>
+          </button>
+          <button class="city-row" data-lat="-37.81" data-lon="144.96" data-name="Melbourne">
+            <span class="city-mark"></span><span class="city-name">Melbourne, Australia<em>The Glasshouse</em></span><span class="city-price num">$228,000</span>
+          </button>
+        </div>
+
+        <div class="globe-stats reveal" style="transition-delay:.2s">
+          <div><div class="num gs-num">21</div><div class="label muted" style="color:rgba(243,238,230,.5)">Countries delivered</div></div>
+          <div><div class="num gs-num">4</div><div class="label" style="color:rgba(243,238,230,.5)">Continents</div></div>
+          <div><div class="num gs-num">$25k</div><div class="label" style="color:rgba(243,238,230,.5)">Entry price</div></div>
+        </div>
+        <p class="globe-hint reveal" id="globeHint" style="transition-delay:.24s">Tap a city to turn the globe to it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="sec-pad quotes">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:clamp(34px,4vw,58px)">
+        <div><div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">07</span><span class="line"></span><span class="label">Buyers on record</span></div></div>
+        <div><h2 class="sec-title display reveal">Signed, sealed,<br>and settled.</h2></div>
+      </div>
+      <div class="quote-grid">
+        <div class="quote reveal">
+          <div class="label" style="color:var(--copper-soft)">Monthly plan · 14 months</div>
+          <p>“I paid $5,000 a month for fourteen months and never once had a hidden charge. The inspection report alone was worth the $200 — it caught a roof issue they fixed before I paid a cent more.”</p>
+          <div class="who">
+            <div class="av" aria-hidden="true" style="display:grid;place-items:center;background:rgba(243,238,230,.13);font-family:'Fraunces',serif;font-size:15px;color:var(--copper-soft)">CB</div>
+            <div><div style="font-weight:600;font-size:14px">Claire Bennett</div><div class="label" style="opacity:.62;margin-top:3px">Manchester, United Kingdom</div></div>
+          </div>
+        </div>
+        <div class="quote reveal" style="transition-delay:.1s">
+          <div class="label" style="color:var(--copper-soft)">Bulk payment · 21 days</div>
+          <p>“I compared nine agencies. Vanguard was the only one that showed me the title search before asking for money. Bulk payment saved me 4% and the deeds arrived in three weeks.”</p>
+          <div class="who">
+            <div class="av" aria-hidden="true" style="display:grid;place-items:center;background:rgba(243,238,230,.13);font-family:'Fraunces',serif;font-size:15px;color:var(--copper-soft)">AD</div>
+            <div><div style="font-weight:600;font-size:14px">Andrés Delgado</div><div class="label" style="opacity:.62;margin-top:3px">Medellín, Colombia</div></div>
+          </div>
+        </div>
+        <div class="quote reveal" style="transition-delay:.2s">
+          <div class="label" style="color:var(--copper-soft)">Monthly plan · 9 months</div>
+          <p>“Everything was done from another country. The video walkthrough was detailed, the contract was plain English, and the keys were in my hands before the final instalment cleared.”</p>
+          <div class="who">
+            <div class="av" aria-hidden="true" style="display:grid;place-items:center;background:rgba(243,238,230,.13);font-family:'Fraunces',serif;font-size:15px;color:var(--copper-soft)">HS</div>
+            <div><div style="font-weight:600;font-size:14px">Haruto Saito</div><div class="label" style="opacity:.62;margin-top:3px">Osaka, Japan</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <img src="https://images.pexels.com/photos/4933643/pexels-photo-4933643.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Illuminated modern home at dusk" loading="lazy">
+    <div class="wrap cta-inner">
+      <div class="eyebrow reveal" style="justify-content:center;color:var(--copper-soft)"><span class="line"></span><span class="label">Start here</span><span class="line"></span></div>
+      <h2 class="display reveal" style="transition-delay:.08s">Your keys are<br>one form away.</h2>
+      <p class="reveal" style="transition-delay:.14s;max-width:52ch;margin:0 auto 34px;color:rgba(243,238,230,.8);font-size:18px">Send us your budget and preferred country. We reply within one working day with matched properties and a payment schedule.</p>
+      <div class="reveal" style="transition-delay:.2s;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="#/contact" class="btn btn-copper magnetic"><span>Send an enquiry</span></a>
+        <a href="#/properties" class="btn btn-ghost magnetic" style="color:var(--cream)"><span>View all properties</span></a>
+      </div>
+      <p class="reveal" style="transition-delay:.26s;margin-top:28px;color:rgba(243,238,230,.7);font-size:14px">Prefer to talk? Call or text <a href="tel:+19179991592" style="color:var(--copper-soft);font-weight:600;text-decoration:underline;text-underline-offset:4px">+1 (917) 999-1592</a></p>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE — PROPERTIES
+================================================================= -->
+<div class="page" id="page-properties">
+  <section class="page-hero">
+    <img src="https://images.pexels.com/photos/14603131/pexels-photo-14603131.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Luxurious modern mansion amid greenery">
+    <div class="sc"></div>
+    <div class="inner wrap">
+      <div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">02</span><span class="line"></span><span class="label">The catalogue</span></div>
+      <h1 class="display reveal" style="transition-delay:.08s">Homes from $25,000, ready to inspect.</h1>
+      <p class="reveal" style="transition-delay:.14s;max-width:56ch;color:rgba(243,238,230,.8);margin-top:22px;font-size:18px">Twelve properties currently open for viewing. Every price is in US dollars and can be taken on the $5,000 monthly plan or settled in bulk with 4% off.</p>
+    </div>
+  </section>
+
+  <section class="sec-pad" style="padding-top:clamp(42px,5vw,72px)">
+    <div class="wrap">
+      <div style="display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;margin-bottom:clamp(26px,3vw,46px)">
+        <div class="filters" id="filters">
+          <button class="chip on" data-filter="all">All properties</button>
+          <button class="chip" data-filter="under60">Under $60,000</button>
+          <button class="chip" data-filter="coastal">Coastal</button>
+          <button class="chip" data-filter="city">City</button>
+          <button class="chip" data-filter="villa">Villas</button>
+          <button class="chip" data-filter="family">Family homes</button>
+        </div>
+        <div class="label muted" id="resultCount">Showing 12 properties</div>
+      </div>
+      <div id="listingWrap"></div>
+      <div id="emptyState" style="display:none;text-align:center;padding:clamp(50px,8vw,110px) 0">
+        <div class="display" style="font-size:clamp(1.9rem,4vw,3.1rem)">No plates match that filter.</div>
+        <p class="muted" style="margin-top:14px">Try another category — or tell us what you are looking for and we will source it.</p>
+        <a href="#/contact" class="btn btn-ink magnetic" style="margin-top:26px"><span>Request a custom search</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-pad plans" style="padding-top:clamp(50px,7vw,92px)">
+    <div class="wrap" style="text-align:center">
+      <div class="eyebrow reveal" style="justify-content:center;color:var(--copper-soft)"><span class="line"></span><span class="label">Not seeing it?</span><span class="line"></span></div>
+      <h2 class="sec-title display reveal" style="margin-inline:auto;max-width:18ch">We source to order in 21 countries.</h2>
+      <p class="lead reveal" style="transition-delay:.1s;color:rgba(243,238,230,.78);max-width:56ch;margin:22px auto 32px">Give us a budget and a region. Our acquisition team returns three verified options within five working days — inspected, priced, and ready for the $200 survey.</p>
+      <a href="#/contact" class="btn btn-copper magnetic reveal"><span>Start a custom search</span></a>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE — PAYMENT
+================================================================= -->
+<div class="page" id="page-payment">
+  <section class="page-hero">
+    <img src="https://images.pexels.com/photos/16808496/pexels-photo-16808496.png?auto=compress&cs=tinysrgb&w=1800" alt="Contemporary building glowing at twilight">
+    <div class="sc"></div>
+    <div class="inner wrap">
+      <div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">03</span><span class="line"></span><span class="label">Payment plans</span></div>
+      <h1 class="display reveal" style="transition-delay:.08s">Two plans. One honest price.</h1>
+      <p class="reveal" style="transition-delay:.14s;max-width:58ch;color:rgba(243,238,230,.8);margin-top:22px;font-size:18px">$5,000 monthly, or bulk with 4% off. The $200 inspection fee is the only payment required before you see the property report.</p>
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section class="sec-pad">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:clamp(30px,4vw,54px)">
+        <div><div class="eyebrow reveal"><span class="idx">01</span><span class="line"></span><span class="label">Payment calculator</span></div></div>
+        <div>
+          <h2 class="sec-title display reveal">See your numbers<br>before you commit.</h2>
+          <p class="lead reveal" style="transition-delay:.1s;max-width:52ch">Move the slider to the price of the home you have in mind. Both routes update instantly.</p>
+        </div>
+      </div>
+
+      <div class="calc reveal">
+        <div class="calc-grid">
+          <div class="calc-left">
+            <div class="label muted">Catalogue price of the home</div>
+            <div class="num" id="calcPrice" style="font-size:clamp(2.6rem,6vw,4.6rem);line-height:1;letter-spacing:-.045em;margin-top:12px">$65,000</div>
+            <input type="range" id="priceRange" min="25000" max="300000" step="5000" value="65000" aria-label="Home price">
+            <div style="display:flex;justify-content:space-between" class="label muted"><span>$25,000</span><span>$300,000</span></div>
+
+            <div style="margin-top:38px" class="label muted">Choose your route</div>
+            <div class="radio-row" style="margin-top:14px">
+              <label><input type="radio" name="calcRoute" value="monthly" checked> Monthly plan</label>
+              <label><input type="radio" name="calcRoute" value="bulk"> Bulk payment</label>
+            </div>
+
+            <p class="form-note" style="margin-top:26px">Figures are indicative and fixed in your contract at the point of reservation. No interest, no arrangement fee, no indexation. The $200 inspection fee is billed separately and refunded on completion.</p>
+          </div>
+
+          <div class="calc-right">
+            <div class="calc-out hero-out">
+              <div><div class="label muted">You pay</div><div class="val num" id="outPrimary">$5,000 / month</div></div>
+            </div>
+            <div class="calc-out">
+              <div class="label muted">Number of instalments</div>
+              <div class="val num" id="outMonths">17</div>
+            </div>
+            <div class="calc-out">
+              <div class="label muted">Total payable</div>
+              <div class="val num" id="outTotal">$85,000</div>
+            </div>
+            <div class="calc-out">
+              <div class="label muted">You save</div>
+              <div class="val num" id="outSave" style="color:var(--copper)">$0</div>
+            </div>
+            <div class="calc-out">
+              <div class="label muted">Inspection fee (refunded)</div>
+              <div class="val num">$200</div>
+            </div>
+            <div class="calc-out" style="border-bottom:0">
+              <div class="label muted">Keys released at</div>
+              <div class="val num" id="outKeys">60% paid</div>
+            </div>
+            <a href="#/contact" class="btn btn-copper magnetic" style="margin-top:30px;width:100%"><span>Reserve this structure</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAN DETAIL -->
+  <section class="sec-pad plans">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:clamp(34px,4vw,58px)">
+        <div><div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">02</span><span class="line"></span><span class="label">Terms in full</span></div></div>
+        <div><h2 class="sec-title display reveal">Read the small print.<br>It is short.</h2></div>
+      </div>
+
+      <div class="plan-grid">
+        <div class="plan reveal">
+          <div class="opt-badge"><i></i>Option A · Plan 01</div>
+          <div class="p-name">Monthly · $5,000</div>
+          <div class="p-amount num">$5,000<small>per month</small></div>
+          <ul>
+            <li><span class="tick">◆</span><span><b>Fixed instalment:</b> $5,000 per calendar month, due on the date of your choosing.</span></li>
+            <li><span class="tick">◆</span><span><b>Term:</b> catalogue price ÷ $5,000, rounded up. A $25,000 home runs 5 months.</span></li>
+            <li><span class="tick">◆</span><span><b>Deposit:</b> none. The $200 inspection fee is the only upfront payment.</span></li>
+            <li><span class="tick">◆</span><span><b>Occupancy:</b> keys released at 60% of the balance, full title at 100%.</span></li>
+            <li><span class="tick">◆</span><span><b>Early settlement:</b> settle the remainder at any time and take 4% off the outstanding balance.</span></li>
+            <li><span class="tick">◆</span><span><b>Missed payment:</b> one free 60-day pause per year. No penalties, no fees.</span></li>
+            <li><span class="tick">◆</span><span><b>Refunds:</b> all instalments returned in full if the property fails inspection.</span></li>
+          </ul>
+        </div>
+        <div class="plan plan-b reveal" style="transition-delay:.12s">
+          <div class="opt-badge"><i></i>Option B · Plan 02</div>
+          <div class="p-name">The Bulk Payment</div>
+          <div class="p-amount num">4%<small>off the total price</small></div>
+          <ul>
+            <li><span class="tick">◆</span><span><b>Discount:</b> 4% off the catalogue price on single settlement.</span></li>
+            <li><span class="tick">◆</span><span><b>Example:</b> a $128,000 home settles at $122,880 — a saving of $5,120.</span></li>
+            <li><span class="tick">◆</span><span><b>Methods:</b> wire transfer, escrow, bank draft or card via our Texas office.</span></li>
+            <li><span class="tick">◆</span><span><b>Timeline:</b> title deeds and keys within 21 working days of cleared funds.</span></li>
+            <li><span class="tick">◆</span><span><b>Escrow:</b> funds held by a licensed third party until the deed is registered.</span></li>
+            <li><span class="tick">◆</span><span><b>Included:</b> legal fees, registry fees, courier of original documents.</span></li>
+            <li><span class="tick">◆</span><span><b>Inspection fee:</b> the $200 is refunded in full on completion.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSPECTION FEE -->
+  <section class="sec-pad">
+    <div class="wrap">
+      <div class="man-grid" style="align-items:center">
+        <div class="man-img-a gcol-a reveal frame">
+          <img src="https://images.pexels.com/photos/4626268/pexels-photo-4626268.jpeg?auto=compress&cs=tinysrgb&w=1300" alt="Modern cottage exterior with warm lamps at dusk" loading="lazy">
+        </div>
+        <div class="gcol-b">
+          <div class="eyebrow reveal"><span class="idx">03</span><span class="line"></span><span class="label">The $200 inspection</span></div>
+          <h2 class="sec-title display reveal" style="font-size:clamp(2.15rem,4.2vw,3.55rem);margin-top:16px">What your<br>$200 buys.</h2>
+          <div class="steps reveal" style="margin-top:26px;border-top:1px solid var(--hair)">
+            <div class="step" style="grid-template-columns:34px 1fr;padding:17px 0;border-bottom:1px solid var(--hair)">
+              <div class="snum" style="font-size:19px">01</div>
+              <div><h4 style="font-size:17px">Physical survey</h4><p style="font-size:14px">A surveyor visits in person — structure, roof, plumbing, electrics, damp and access.</p></div>
+            </div>
+            <div class="step" style="grid-template-columns:34px 1fr;padding:17px 0;border-bottom:1px solid var(--hair)">
+              <div class="snum" style="font-size:19px">02</div>
+              <div><h4 style="font-size:17px">Title search</h4><p style="font-size:14px">Registry check for liens, boundaries, ownership history and planning status.</p></div>
+            </div>
+            <div class="step" style="grid-template-columns:34px 1fr;padding:17px 0;border-bottom:1px solid var(--hair)">
+              <div class="snum" style="font-size:19px">03</div>
+              <div><h4 style="font-size:17px">Video walkthrough</h4><p style="font-size:14px">A narrated 4K tour of every room, the plot and the surrounding street.</p></div>
+            </div>
+            <div class="step" style="grid-template-columns:34px 1fr;padding:17px 0">
+              <div class="snum" style="font-size:19px">04</div>
+              <div><h4 style="font-size:17px">Written report</h4><p style="font-size:14px">Delivered in 5 working days — and refunded against the purchase price.</p></div>
+            </div>
+          </div>
+          <a href="#/contact" class="btn btn-ink magnetic reveal" style="margin-top:30px"><span>Book my inspection</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE — PROCESS
+================================================================= -->
+<div class="page" id="page-process">
+  <section class="page-hero">
+    <img src="https://images.pexels.com/photos/740587/pexels-photo-740587.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Hillside villas surrounded by greenery">
+    <div class="sc"></div>
+    <div class="inner wrap">
+      <div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">04</span><span class="line"></span><span class="label">How it works</span></div>
+      <h1 class="display reveal" style="transition-delay:.08s">From enquiry to keys — the whole route.</h1>
+      <p class="reveal" style="transition-delay:.14s;max-width:58ch;color:rgba(243,238,230,.8);margin-top:22px;font-size:18px">A five-stage process built for buyers who live in a different country from the home they are buying.</p>
+    </div>
+  </section>
+
+  <section class="sec-pad">
+    <div class="wrap">
+      <div class="steps">
+        <div class="step reveal">
+          <div class="snum">01</div>
+          <h4>Enquiry & matching</h4>
+          <p>Tell us your budget, preferred region and whether you want the monthly plan or bulk payment. Within one working day you receive a shortlist of matched homes with photographs, floor areas, plot sizes and catalogue prices.</p>
+        </div>
+        <div class="step reveal">
+          <div class="snum">02</div>
+          <h4>Reservation & inspection fee</h4>
+          <p>You reserve the home with a $200 inspection fee. That is the entire upfront cost — no deposit, no reservation levy, no administrative charge. The fee is refunded when the purchase completes.</p>
+        </div>
+        <div class="step reveal">
+          <div class="snum">03</div>
+          <h4>Survey, title search & walkthrough</h4>
+          <p>Our surveyor attends the property within five working days. You receive a written condition report, a title registry search and a narrated video walkthrough. If the report does not satisfy you, the file closes and the fee is returned.</p>
+        </div>
+        <div class="step reveal">
+          <div class="snum">04</div>
+          <h4>Contract & payment</h4>
+          <p>Choose the $5,000 monthly plan or bulk payment with 4% off. Both are set out in one plain-language contract. Monthly clients begin instalments on a date they choose; bulk clients settle through escrow or wire.</p>
+        </div>
+        <div class="step reveal">
+          <div class="snum">05</div>
+          <h4>Documentation</h4>
+          <p>Our legal team prepares the deed transfer, files with the local registry and arranges apostilled copies for international buyers. Originals are couriered with tracking, anywhere in the world, at our cost.</p>
+        </div>
+        <div class="step reveal">
+          <div class="snum">06</div>
+          <h4>Handover</h4>
+          <p>Keys are released in person or by our delivery partner, with a live video handover for remote buyers. Monthly clients receive keys at 60% paid; bulk clients at transfer. Aftercare covers utilities, insurance and local management introductions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec-pad" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:clamp(26px,3vw,44px)">
+        <div><div class="eyebrow reveal"><span class="idx">05</span><span class="line"></span><span class="label">Frequently asked</span></div></div>
+        <div><h2 class="sec-title display reveal">Straight answers.</h2></div>
+      </div>
+
+      <details open>
+        <summary>Is the $200 inspection fee refundable?</summary>
+        <div class="ans">Yes. It is refunded in full in two situations: if the property fails our inspection and you walk away, or when you complete the purchase. It is the only payment taken before you receive the property report.</div>
+      </details>
+      <details>
+        <summary>How does the $5,000 monthly plan actually work?</summary>
+        <div class="ans">The instalment is fixed at $5,000 regardless of the home. The number of months is simply the catalogue price divided by $5,000 and rounded up. A $25,000 home runs 5 months; an $80,000 home runs 16 months. There is no interest, no arrangement fee and no indexation.</div>
+      </details>
+      <details>
+        <summary>What discount do I get for paying in bulk?</summary>
+        <div class="ans">4% off the catalogue price. On a $128,000 home that is a saving of $5,120. Bulk buyers also receive the fastest timeline: title deeds and keys within 21 working days of cleared funds.</div>
+      </details>
+      <details>
+        <summary>Can I buy from outside the United States?</summary>
+        <div class="ans">Absolutely — distance is not a barrier. Roughly seven in ten of our buyers are outside the country where the property sits. Everything from the video walkthrough to the deed courier is designed for remote purchase, and all prices are quoted in US dollars.</div>
+      </details>
+      <details>
+        <summary>What is the cheapest home you sell?</summary>
+        <div class="ans">Our catalogue starts at $25,000 for a completed, title-verified home with two bedrooms and two bathrooms. Entry-level properties are typically two-bedroom houses in regional towns, and they are subject to the same inspection standard as our villas.</div>
+      </details>
+      <details>
+        <summary>When do I get the keys?</summary>
+        <div class="ans">Bulk buyers at transfer, usually 21 working days after funds clear. Monthly plan buyers at 60% of the balance paid, with full title transferred once the final instalment settles.</div>
+      </details>
+      <details>
+        <summary>What happens if a property fails inspection?</summary>
+        <div class="ans">The file closes, you receive the written report explaining the fault, and every payment — including the $200 fee — is returned. We would rather lose a sale than hand over a home we would not live in ourselves.</div>
+      </details>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <img src="https://images.pexels.com/photos/29561705/pexels-photo-29561705.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Modern suburban homes at twilight" loading="lazy">
+    <div class="wrap cta-inner">
+      <h2 class="display reveal">Ready to see<br>the catalogue?</h2>
+      <div class="reveal" style="transition-delay:.1s;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="#/properties" class="btn btn-copper magnetic"><span>Browse properties</span></a>
+        <a href="#/contact" class="btn btn-ghost magnetic" style="color:var(--cream)"><span>Talk to an advisor</span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE — CONTACT
+================================================================= -->
+<div class="page" id="page-contact">
+  <section class="page-hero">
+    <img src="https://images.pexels.com/photos/12848486/pexels-photo-12848486.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Aerial view of a modern house by the beach">
+    <div class="sc"></div>
+    <div class="inner wrap">
+      <div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">05</span><span class="line"></span><span class="label">Contact</span></div>
+      <h1 class="display reveal" style="transition-delay:.08s">Tell us your budget. We will do the rest.</h1>
+      <p class="reveal" style="transition-delay:.14s;max-width:56ch;color:rgba(243,238,230,.8);margin-top:22px;font-size:18px">One working day response, in English or Spanish, from our Houston desk.</p>
+      <div class="reveal" style="transition-delay:.2s;display:flex;flex-wrap:wrap;gap:12px;margin-top:30px">
+        <a href="tel:+19179991592" class="btn btn-copper magnetic"><span>Call +1 (917) 999-1592</span></a>
+        <a href="sms:+19179991592?&body=Hello%20Vanguard%20Estates%2C%20I%27d%20like%20to%20enquire%20about%20a%20home." class="btn btn-ghost magnetic" style="color:var(--cream)"><span>Text us instead</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-pad">
+    <div class="wrap">
+      <div class="form-grid">
+        <!-- FORM -->
+        <div>
+          <div class="eyebrow reveal"><span class="idx">01</span><span class="line"></span><span class="label">Enquiry form</span></div>
+          <h2 class="sec-title display reveal" style="font-size:clamp(2.15rem,4.2vw,3.55rem);margin:16px 0 30px">Start your file.</h2>
+
+          <form id="contactForm" action="https://formspree.io/f/xbggzova" method="POST" novalidate>
+            <div class="field two">
+              <div>
+                <label for="fname">Full name *</label>
+                <input type="text" id="fname" name="name" placeholder="Your full name" required>
+              </div>
+              <div>
+                <label for="femail">Email address *</label>
+                <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+              </div>
+            </div>
+
+            <div class="field two">
+              <div>
+                <label for="fphone">Phone number (for calls or texts)</label>
+                <input type="tel" id="fphone" name="phone" placeholder="+1 555 000 0000">
+              </div>
+              <div>
+                <label for="fcountry">Country of residence</label>
+                <input type="text" id="fcountry" name="country" placeholder="e.g. United States">
+              </div>
+            </div>
+
+            <div class="field two">
+              <div>
+                <label for="fbudget">Budget range *</label>
+                <select id="fbudget" name="budget" required>
+                  <option value="">Select a range</option>
+                  <option>$25,000 – $60,000</option>
+                  <option>$60,000 – $120,000</option>
+                  <option>$120,000 – $200,000</option>
+                  <option>$200,000 – $300,000</option>
+                  <option>$300,000+</option>
+                </select>
+              </div>
+              <div>
+                <label for="fregion">Preferred region</label>
+                <select id="fregion" name="region">
+                  <option value="">No preference</option>
+                  <option>United States</option>
+                  <option>Europe</option>
+                  <option>Latin America</option>
+                  <option>Middle East</option>
+                  <option>Asia</option>
+                  <option>Africa</option>
+                  <option>Oceania</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Preferred payment plan</label>
+              <div class="radio-row">
+                <label><input type="radio" name="plan" value="$5,000 monthly plan" checked> $5,000 monthly plan</label>
+                <label><input type="radio" name="plan" value="Bulk payment (4% off)"> Bulk payment · 4% off</label>
+                <label><input type="radio" name="plan" value="Not sure yet"> Not sure yet</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="fmsg">Your message *</label>
+              <textarea id="fmsg" name="message" placeholder="Tell us the kind of home you are looking for, where, and when you would like to move." required></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="New enquiry — Vanguard Estates">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <button type="submit" class="btn btn-copper magnetic" id="submitBtn" style="width:100%;padding:20px">
+              <span class="spinner"></span><span id="submitText">Send enquiry</span>
+            </button>
+
+            <div class="form-status" id="formStatus"></div>
+
+            <p class="form-note">By sending this form you agree to be contacted about property matching. We never share your details with third parties. Inspection fee is $200 and is refunded on completion of a purchase.</p>
+          </form>
+        </div>
+
+        <!-- INFO -->
+        <aside>
+          <div class="info-panel reveal">
+            <div class="label" style="color:var(--copper-soft)">Vanguard Estates</div>
+            <div class="display" style="font-size:clamp(1.85rem,3vw,2.55rem);margin:14px 0 26px;line-height:1.02">Houston desk,<br>global delivery.</div>
+
+            <div class="row">
+              <div class="label" style="color:var(--copper-soft)">Head office</div>
+              <div style="margin-top:8px">1400 Post Oak Boulevard, Suite 900<br>Houston, Texas 77056, United States</div>
+            </div>
+            <div class="row">
+              <div class="label" style="color:var(--copper-soft)">Email</div>
+              <a href="mailto:john@vanguardestatesgroup.com" style="display:block;margin-top:8px;color:var(--cream);word-break:break-word;font-size:15.5px">john@vanguardestatesgroup.com</a>
+            </div>
+            <div class="row">
+              <div class="label" style="color:var(--copper-soft)">Phone · calls &amp; texts</div>
+              <a href="tel:+19179991592" class="num" style="display:block;margin-top:8px;font-size:22px;color:var(--cream)">+1 (917) 999-1592</a>
+              <a href="sms:+19179991592?&body=Hello%20Vanguard%20Estates%2C%20I%27d%20like%20to%20enquire%20about%20a%20home." class="btn btn-copper magnetic" style="margin-top:16px;padding:12px 20px"><span>Text this number</span></a>
+            </div>
+            <div class="row">
+              <div class="label" style="color:var(--copper-soft)">Desk hours</div>
+              <div style="margin-top:8px">Monday – Friday · 08:00 – 19:00 CST<br>Saturday · 09:00 – 14:00 CST</div>
+            </div>
+            <div class="row">
+              <div class="label" style="color:var(--copper-soft)">Regional offices</div>
+              <div style="margin-top:8px">Lisbon · Dubai · Singapore · Toronto · Medellín</div>
+            </div>
+          </div>
+
+          <div class="frame reveal" style="margin-top:22px;overflow:hidden">
+            <img src="https://images.pexels.com/photos/37911536/pexels-photo-37911536.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Serene outdoor pool next to a sunlit stone house" loading="lazy" style="width:100%;height:320px;object-fit:cover">
+          </div>
+
+          <div class="reveal" style="margin-top:22px;border:1px solid var(--hair);padding:24px">
+            <div class="label muted">Response commitment</div>
+            <div class="display" style="font-size:clamp(1.65rem,3vw,2.25rem);margin:12px 0 8px;line-height:1.05">Under 24 hours.</div>
+            <p style="margin:0;font-size:14px;color:#4A473F">Every enquiry receives a named advisor, a shortlist of matched homes and a payment schedule — before any fee is discussed.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE — TERMS OF SERVICE
+================================================================= -->
+<div class="page" id="page-terms">
+  <section class="page-hero" style="padding:clamp(118px,14vw,168px) 0 clamp(38px,5vw,62px)">
+    <img src="https://images.pexels.com/photos/8551197/pexels-photo-8551197.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Mediterranean houses on a rocky coastline">
+    <div class="sc"></div>
+    <div class="inner wrap">
+      <div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">06</span><span class="line"></span><span class="label">Legal</span></div>
+      <h1 class="display reveal" style="transition-delay:.08s;max-width:17ch">Terms of service, set out plainly.</h1>
+      <p class="reveal" style="transition-delay:.14s;max-width:56ch;color:rgba(243,238,230,.8);margin-top:20px">The rules that apply when you use this website, request an inspection, or purchase a home through Vanguard Estates.</p>
+    </div>
+  </section>
+
+  <section class="legal-sec">
+    <div class="wrap">
+      <div class="legal-grid">
+        <aside class="legal-toc" aria-label="On this page">
+          <div class="label">On this page</div>
+          <button data-jump="t-about" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">1. About these terms</button>
+          <button data-jump="t-who" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">2. Who we are</button>
+          <button data-jump="t-eligibility" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">3. Eligibility</button>
+          <button data-jump="t-listings" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">4. Listings & availability</button>
+          <button data-jump="t-pricing" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">5. Prices & currency</button>
+          <button data-jump="t-inspection" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">6. The $200 inspection</button>
+          <button data-jump="t-contract" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">7. Reservation & contract</button>
+          <button data-jump="t-payments" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">8. Payment plans</button>
+          <button data-jump="t-title" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">9. Title & handover</button>
+          <button data-jump="t-cancellation" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">10. Cancellation & refunds</button>
+          <button data-jump="t-obligations" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">11. Your responsibilities</button>
+          <button data-jump="t-liability" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">12. Our liability</button>
+          <button data-jump="t-law" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">13. Law & disputes</button>
+          <button data-jump="t-changes" style="display:block;width:100%;text-align:left;background:none;border:0;padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">14. Changes & contact</button>
+          <div class="legal-contact">
+            <div class="label muted" style="margin-bottom:8px">Questions</div>
+            <a href="mailto:john@vanguardestatesgroup.com" style="word-break:break-word">john@vanguardestatesgroup.com</a>
+            <a href="tel:+19179991592">+1 (917) 999-1592</a>
+            <a href="#/contact" style="color:var(--copper);margin-top:8px">Send an enquiry →</a>
+          </div>
+        </aside>
+
+        <article class="legal-body">
+          <div class="legal-meta"><span>Last updated: 12 February 2026</span><span>Effective: 1 March 2026</span></div>
+          <p class="legal-intro">We try to write the way we work: clearly, without hidden clauses. If anything below is unclear, call us before you pay anything — the number is at the side of this page.</p>
+
+          <h2 id="t-about">1. About these terms</h2>
+          <p>These Terms of Service govern your use of the Vanguard Estates website and any property enquiry, inspection, reservation or purchase you make through us. By browsing the site, submitting the enquiry form or instructing an inspection, you accept these terms.</p>
+          <p>Where you proceed to purchase, you will also sign a written sale agreement for the specific property. That agreement governs the transaction. If these terms conflict with the sale agreement, the sale agreement prevails to the extent of the conflict.</p>
+
+          <h2 id="t-who">2. Who we are</h2>
+          <p>Vanguard Estates is a United States-based property acquisition and resale business with its registered office at 1400 Post Oak Boulevard, Suite 900, Houston, Texas 77056, United States. References to “we”, “us” and “our” mean Vanguard Estates.</p>
+          <p>You can reach us at <a href="mailto:john@vanguardestatesgroup.com">john@vanguardestatesgroup.com</a> or on <a href="tel:+19179991592">+1 (917) 999-1592</a> by call or text message, Monday to Friday between 08:00 and 19:00 Central Time.</p>
+
+          <h2 id="t-eligibility">3. Eligibility</h2>
+          <ul>
+            <li>You must be at least 18 years old and legally capable of entering into binding contracts.</li>
+            <li>You must be lawfully entitled to purchase residential property in the destination country. Some jurisdictions impose restrictions on non-residents; we will tell you in writing if a property is affected.</li>
+            <li>You are responsible for obtaining your own tax, immigration and legal advice in the destination country. We do not provide tax or immigration advice.</li>
+          </ul>
+
+          <h2 id="t-listings">4. Listings and availability</h2>
+          <p>Our catalogue is a genuine description of properties we have inspected or are inspecting. Photographs, furniture, planting and views are indicative and may change between inspection and handover. Floor areas and plot sizes are approximate and taken from the title record or our surveyor's measurements.</p>
+          <p>Every property is offered subject to prior sale, withdrawal and continued availability. A property is reserved for you only when a sale agreement has been signed and the inspection fee confirmed. We may correct errors in the catalogue at any time and will tell you before you sign if a material detail has changed.</p>
+
+          <h2 id="t-pricing">5. Prices and currency</h2>
+          <p>All prices are quoted in United States dollars (USD). Our catalogue currently starts at <strong>$25,000</strong> for a completed, title-verified home. Prices include legal fees, registry filing costs and couriered title documents unless the written quotation states otherwise.</p>
+          <p>Where local law requires the buyer to pay a property transfer tax or stamp duty, the amount will be identified in your written quotation before you sign. You are responsible for any local taxes arising on your purchase and for your own banking charges.</p>
+          <p>We may change catalogue prices at any time without notice. A price confirmed in a signed sale agreement will not change except by written agreement between you and us.</p>
+
+          <h2 id="t-inspection">6. The $200 inspection fee</h2>
+          <p>We charge a flat <strong>$200 inspection fee</strong> for each property you wish to take forward. It covers a physical condition survey, a title registry search, a narrated video walkthrough and a written report delivered within five working days.</p>
+          <p>The fee is refunded in full when the purchase completes. It is also refunded where the property fails our inspection and we are unable to remedy the fault, or where we withdraw the property from sale. If the report is clean and you decide not to proceed for your own reasons, the fee is not refundable — but no further sum is due and no reservation obligation continues.</p>
+
+          <h2 id="t-contract">7. Reservation and sale agreement</h2>
+          <p>Following a satisfactory inspection you may reserve the property by signing our sale agreement and choosing a payment route. No deposit is required. The agreement will set out the property, price, plan, instalment dates, expected handover date and the refund terms that apply.</p>
+          <p>We do not accept verbal reservations for indefinite periods. If a signed agreement and the inspection fee are not in place, the property remains available to other buyers.</p>
+
+          <h2 id="t-payments">8. Payment plans</h2>
+          <p>Two routes are available on every property in the catalogue:</p>
+          <ul>
+            <li><strong>Monthly plan — $5,000 per instalment.</strong> The number of instalments is the catalogue price divided by $5,000, rounded up. Interest is not charged and the instalment is not indexed. Keys and occupancy are released at 60% of the balance paid, with full title on final settlement.</li>
+            <li><strong>Bulk payment — 4% discount.</strong> The full price is settled once and reduced by 4%. Title and keys follow within 21 working days of cleared funds.</li>
+          </ul>
+          <p>Full operational detail, examples and accepted payment methods are set out in our <a href="#/payment-policy">Payment Policy</a>, which forms part of these terms.</p>
+
+          <h2 id="t-title">9. Title transfer and handover</h2>
+          <p>Our legal team prepares the deed of transfer, lodges the filing with the relevant registry and arranges apostilled copies for international buyers. Original documents are couriered to you at our cost with tracking. Where registered title cannot be transferred for reasons outside our control, we will refund every amount you have paid us for that property, including the inspection fee.</p>
+          <p>Handover takes place in person or through our delivery partner, with a live video handover available for remote buyers. Risk in the property passes on handover. We strongly recommend arranging insurance from that date.</p>
+
+          <h2 id="t-cancellation">10. Cancellation and refunds</h2>
+          <p>You may cancel a signed sale agreement within <strong>14 days</strong> of signing, provided the title transfer has not yet been lodged with the registry. Any amounts paid will be returned, less the $200 inspection fee, within 20 working days.</p>
+          <p>After the cooling-off period, cancellation and refund rights are those set out in your sale agreement and any rights you have under mandatory local consumer law. Where we cancel an agreement for a reason within our control, we return all amounts paid for that property in full. Refunds are made by the original payment method where possible, or by bank transfer to an account in your name.</p>
+
+          <h2 id="t-obligations">11. Your responsibilities</h2>
+          <ul>
+            <li>Provide accurate identity, contact and payment information, and cooperate with anti-money-laundering checks.</li>
+            <li>Ensure that all funds used are lawfully yours and are paid from an account in your name.</li>
+            <li>Read the inspection report, title search and sale agreement before signing.</li>
+            <li>Arrange insurance, utilities and local registrations from the handover date.</li>
+            <li>Do not use this website for unlawful purposes or attempt to interfere with its operation.</li>
+          </ul>
+
+          <h2 id="t-liability">12. Our liability</h2>
+          <p>We will provide our services with reasonable skill and care. We are not liable for indirect or consequential loss, loss of profit, loss of opportunity or loss arising from your failure to obtain local advice. Our total liability arising from a property purchase is limited to the amounts you have paid us for that property.</p>
+          <p>Nothing in these terms excludes liability for fraud, death or personal injury caused by our negligence, or any liability that cannot lawfully be excluded.</p>
+
+          <h2 id="t-law">13. Governing law and disputes</h2>
+          <p>These terms are governed by the laws of the State of Texas, United States. We will always try to resolve a complaint directly: write to us and allow 30 days for a good-faith response. If a dispute cannot be settled, the courts of Harris County, Texas have jurisdiction, without affecting any mandatory protections available to you as a consumer in your own country.</p>
+
+          <h2 id="t-changes">14. Changes and contact</h2>
+          <p>We may update these terms to reflect changes in our services or the law. The version published on this page at the time you sign an agreement is the version that applies to that agreement. Material changes will be flagged on the homepage for 30 days.</p>
+          <div class="legal-callout">
+            <p><strong>Contact:</strong> Vanguard Estates, 1400 Post Oak Boulevard, Suite 900, Houston, Texas 77056, USA. Email <a href="mailto:john@vanguardestatesgroup.com">john@vanguardestatesgroup.com</a> · Phone (calls and texts) <a href="tel:+19179991592">+1 (917) 999-1592</a>.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE — PRIVACY POLICY
+================================================================= -->
+<div class="page" id="page-privacy">
+  <section class="page-hero" style="padding:clamp(118px,14vw,168px) 0 clamp(38px,5vw,62px)">
+    <img src="https://images.pexels.com/photos/7031600/pexels-photo-7031600.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Courtyard of a contemporary house in summer">
+    <div class="sc"></div>
+    <div class="inner wrap">
+      <div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">07</span><span class="line"></span><span class="label">Privacy</span></div>
+      <h1 class="display reveal" style="transition-delay:.08s;max-width:17ch">Your details, handled with care.</h1>
+      <p class="reveal" style="transition-delay:.14s;max-width:56ch;color:rgba(243,238,230,.8);margin-top:20px">What we collect when you enquire about a home, why we collect it, and the control you have over it.</p>
+    </div>
+  </section>
+
+  <section class="legal-sec">
+    <div class="wrap">
+      <div class="legal-grid">
+        <aside class="legal-toc" aria-label="On this page">
+          <div class="label">On this page</div>
+          <button data-jump="p-overview" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">1. Overview</button>
+          <button data-jump="p-collect" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">2. What we collect</button>
+          <button data-jump="p-use" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">3. How we use it</button>
+          <button data-jump="p-bases" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">4. Our lawful bases</button>
+          <button data-jump="p-share" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">5. Who we share with</button>
+          <button data-jump="p-transfers" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">6. International transfers</button>
+          <button data-jump="p-retention" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">7. How long we keep it</button>
+          <button data-jump="p-security" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">8. Security</button>
+          <button data-jump="p-rights" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">9. Your rights</button>
+          <button data-jump="p-cookies" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">10. Cookies</button>
+          <button data-jump="p-children" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">11. Children</button>
+          <button data-jump="p-changes" style="display:block;width:100%;text-align:left;background:none;border:0;padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">12. Changes & contact</button>
+          <div class="legal-contact">
+            <div class="label muted" style="margin-bottom:8px">Privacy queries</div>
+            <a href="mailto:john@vanguardestatesgroup.com" style="word-break:break-word">john@vanguardestatesgroup.com</a>
+            <a href="tel:+19179991592">+1 (917) 999-1592</a>
+            <a href="#/contact" style="color:var(--copper);margin-top:8px">Send an enquiry →</a>
+          </div>
+        </aside>
+
+        <article class="legal-body">
+          <div class="legal-meta"><span>Last updated: 12 February 2026</span><span>Effective: 1 March 2026</span></div>
+          <p class="legal-intro">We collect the minimum we need to match you with a property and complete a lawful purchase. We do not sell your data, and we do not pass your details to estate agents for their own marketing.</p>
+
+          <h2 id="p-overview">1. Overview</h2>
+          <p>This Privacy Policy explains how Vanguard Estates collects, uses, stores and shares personal information when you visit this website, submit an enquiry, book an inspection or buy a home. It applies to our website, email, telephone, text-message communications and to the services delivered after a purchase.</p>
+          <p>Vanguard Estates is the data controller for the information described here. Our registered office is 1400 Post Oak Boulevard, Suite 900, Houston, Texas 77056, United States.</p>
+
+          <h2 id="p-collect">2. What we collect</h2>
+          <h3>Information you give us</h3>
+          <ul>
+            <li><strong>Identity and contact details:</strong> name, email address, telephone or text-message number and country of residence.</li>
+            <li><strong>Enquiry details:</strong> your budget range, preferred region, chosen payment plan and the content of your message.</li>
+            <li><strong>Transaction information:</strong> property selected, plan, instalments paid, receipts, identity and anti-money-laundering documents, and legal or survey correspondence.</li>
+            <li><strong>Communications:</strong> emails, call notes and messaging records relating to your enquiry or purchase.</li>
+          </ul>
+          <h3>Information collected automatically</h3>
+          <ul>
+            <li>Basic technical data such as browser type, device type, screen size and the pages you visit, used to keep the site working and improve it.</li>
+            <li>Preferences stored in your browser, for example navigation state. Our forms are delivered to us by our form-processing provider, Formspree.</li>
+          </ul>
+
+          <h2 id="p-use">3. How we use your information</h2>
+          <ul>
+            <li>To respond to your enquiry and send a shortlist of matched properties.</li>
+            <li>To arrange a property inspection, commission a survey and complete a title search.</li>
+            <li>To prepare and administer your sale agreement, payment plan, receipts and title transfer.</li>
+            <li>To meet anti-money-laundering, sanctions, tax and accounting obligations.</li>
+            <li>To keep you updated about your file, and — only where you have asked — about new properties.</li>
+            <li>To detect, investigate and prevent fraud or misuse of our website and services.</li>
+          </ul>
+
+          <h2 id="p-bases">4. Our lawful bases</h2>
+          <p>Where data protection law requires a legal basis, we rely on: <strong>performance of a contract</strong> or steps taken at your request before signing; <strong>our legitimate interests</strong> in operating a property business, responding to enquiries and preventing fraud; <strong>legal obligation</strong> for money-laundering, tax and record-keeping duties; and <strong>consent</strong> for optional marketing, which you can withdraw at any time.</p>
+
+          <h2 id="p-share">5. Who we share information with</h2>
+          <p>We share only what is necessary, and only with parties that help us deliver the service:</p>
+          <ul>
+            <li>Our form-delivery provider, Formspree, which transmits enquiries to our business mailbox.</li>
+            <li>Surveyors, valuers, notaries, lawyers and title registries in the property's country.</li>
+            <li>Regulated payment processors, banks and escrow agents handling payments.</li>
+            <li>Courier partners delivering original documents.</li>
+            <li>Website hosting, email and technical support providers acting on our instructions.</li>
+            <li>Public authorities or courts where the law requires disclosure.</li>
+            <li>Professional advisers and any successor to our business as part of a corporate transaction.</li>
+          </ul>
+          <p>We do not sell or rent personal information, and we do not allow service providers to use it for their own marketing.</p>
+
+          <h2 id="p-transfers">6. International transfers</h2>
+          <p>Our operations are based in the United States, and property purchases involve legal and survey partners in other countries. Information may therefore be processed outside the country where you live. Where required, we use appropriate safeguards such as standard contractual clauses with our providers and limit transfers to what is needed for your file.</p>
+
+          <h2 id="p-retention">7. How long we keep information</h2>
+          <p>We keep enquiries that do not proceed for up to <strong>24 months</strong> so we can pick up conversations where they left off. Records relating to a completed purchase — including contracts, receipts and identity checks — are kept for <strong>seven years</strong> after completion or longer where local law requires. Marketing preferences are kept until you unsubscribe. After these periods, records are securely deleted or anonymised.</p>
+
+          <h2 id="p-security">8. Security</h2>
+          <p>We use access controls, encrypted transmission where available, secured mailboxes and confidentiality obligations with staff and suppliers. No online transmission is entirely secure, so please send identity documents only through the secure channel we provide, never in a standard email or social message.</p>
+
+          <h2 id="p-rights">9. Your rights</h2>
+          <p>Depending on where you live, you may ask to access, correct, delete, restrict or receive a portable copy of your personal information, or object to certain processing. You may withdraw marketing consent at any time. To exercise a right, email <a href="mailto:john@vanguardestatesgroup.com">john@vanguardestatesgroup.com</a> with enough information for us to identify your file. We respond within 30 days. You may also complain to your local data protection authority.</p>
+
+          <h2 id="p-cookies">10. Cookies and similar technologies</h2>
+          <p>The site uses a small amount of local browser storage to maintain navigation and presentation preferences. We do not run advertising trackers. Embedded services such as fonts, images and our form provider may set their own technical cookies; their privacy notices apply to those. You can clear cookies through your browser settings at any time.</p>
+
+          <h2 id="p-children">11. Children</h2>
+          <p>Our services are for adults. We do not knowingly collect personal information from anyone under 18. If you believe a child has submitted information, contact us and we will remove it.</p>
+
+          <h2 id="p-changes">12. Changes and contact</h2>
+          <p>We may update this policy as our services or the law change. The date at the top of this page shows the current version, and material changes will be flagged on the homepage for 30 days.</p>
+          <p>Privacy requests and questions: Vanguard Estates, 1400 Post Oak Boulevard, Suite 900, Houston, Texas 77056, United States. Email <a href="mailto:john@vanguardestatesgroup.com">john@vanguardestatesgroup.com</a> · Phone (calls and texts) <a href="tel:+19179991592">+1 (917) 999-1592</a>.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE — PAYMENT POLICY
+================================================================= -->
+<div class="page" id="page-payment-policy">
+  <section class="page-hero" style="padding:clamp(118px,14vw,168px) 0 clamp(38px,5vw,62px)">
+    <img src="https://images.pexels.com/photos/1572667/pexels-photo-1572667.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="House by the sea in northern Europe">
+    <div class="sc"></div>
+    <div class="inner wrap">
+      <div class="eyebrow reveal" style="color:var(--copper-soft)"><span class="idx">08</span><span class="line"></span><span class="label">Payments</span></div>
+      <h1 class="display reveal" style="transition-delay:.08s;max-width:17ch">Payments, receipts and refunds.</h1>
+      <p class="reveal" style="transition-delay:.14s;max-width:58ch;color:rgba(243,238,230,.8);margin-top:20px">How the $200 inspection fee, the $5,000 monthly plan and 4% bulk discount work in practice — and exactly what happens to your money.</p>
+    </div>
+  </section>
+
+  <section class="legal-sec">
+    <div class="wrap">
+      <div class="legal-grid">
+        <aside class="legal-toc" aria-label="On this page">
+          <div class="label">On this page</div>
+          <button data-jump="pay-scope" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">1. Scope</button>
+          <button data-jump="pay-currency" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">2. Currency & pricing</button>
+          <button data-jump="pay-inspection" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">3. Inspection fee</button>
+          <button data-jump="pay-monthly" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">4. Monthly plan</button>
+          <button data-jump="pay-bulk" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">5. Bulk payment</button>
+          <button data-jump="pay-methods" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">6. Accepted methods</button>
+          <button data-jump="pay-escrow" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">7. Escrow & receipts</button>
+          <button data-jump="pay-missed" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">8. Missed payments</button>
+          <button data-jump="pay-early" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">9. Early settlement</button>
+          <button data-jump="pay-refunds" style="display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(18,19,15,.07);padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">10. Refunds</button>
+          <button data-jump="pay-security" style="display:block;width:100%;text-align:left;background:none;border:0;padding:7px 0;font-size:13px;color:#4A473F;cursor:pointer;font-family:inherit">11. Fraud & security</button>
+          <div class="legal-contact">
+            <div class="label muted" style="margin-bottom:8px">Payment support</div>
+            <a href="mailto:john@vanguardestatesgroup.com" style="word-break:break-word">john@vanguardestatesgroup.com</a>
+            <a href="tel:+19179991592">+1 (917) 999-1592</a>
+            <a href="#/contact" style="color:var(--copper);margin-top:8px">Send an enquiry →</a>
+          </div>
+        </aside>
+
+        <article class="legal-body">
+          <div class="legal-meta"><span>Last updated: 12 February 2026</span><span>Effective: 1 March 2026</span></div>
+          <p class="legal-intro">One fee to inspect, two ways to buy. Nothing is deducted before you have read the survey report, and every dollar you send is receipted in writing.</p>
+
+          <h2 id="pay-scope">1. Scope</h2>
+          <p>This Payment Policy explains how payments are collected, applied, receipted and refunded by Vanguard Estates. It forms part of our <a href="#/terms">Terms of Service</a> and applies to all property enquiries, inspections and purchases made through this website, by telephone or by text message. If a signed sale agreement contains different payment terms, the sale agreement applies.</p>
+
+          <h2 id="pay-currency">2. Currency and pricing</h2>
+          <p>All prices and payments are in <strong>United States dollars (USD)</strong>. Catalogue prices start at <strong>$25,000</strong> for a completed, title-verified home. The quoted price covers the property, our legal work on the transfer, registry filing and couriered title documents, unless your written quotation says otherwise. Any local transfer tax, stamp duty or bank charge that applies in the destination country will be identified in writing before you sign. We never add an undisclosed closing fee after signature.</p>
+
+          <h2 id="pay-inspection">3. The $200 inspection fee</h2>
+          <p>A flat <strong>$200</strong> is payable for each property you wish to inspect. It is the only amount required before you receive the property report, and it covers:</p>
+          <ul>
+            <li>A physical condition survey by our own or instructed surveyor.</li>
+            <li>A title registry search for ownership, liens and planning status.</li>
+            <li>A narrated 4K video walkthrough of the property, plot and street.</li>
+            <li>A written report delivered within five working days.</li>
+          </ul>
+          <p>The fee is <strong>fully refunded</strong> when your purchase completes, or where the property fails inspection and we cannot remedy the fault, or where we withdraw the property. If the report is clean and you decide not to proceed for your own reasons, the fee is retained to cover the survey. No deposit and no further amount is due at inspection stage.</p>
+
+          <h2 id="pay-monthly">4. Monthly plan — $5,000 per instalment</h2>
+          <p>The monthly instalment is fixed at <strong>$5,000</strong> regardless of the property. The term is the catalogue price divided by $5,000, rounded up to a whole month:</p>
+          <ul>
+            <li>A <strong>$25,000</strong> home — 5 instalments, settled in full after 5 months.</li>
+            <li>A <strong>$52,000</strong> home — 11 instalments, settled in full after 11 months.</li>
+            <li>A <strong>$128,000</strong> home — 26 instalments, settled in full after 26 months.</li>
+          </ul>
+          <p><strong>No interest is charged.</strong> The instalment is never indexed or reviewed upwards during your term. There is no arrangement fee, no deposit and no early redemption penalty. Where the price is not an exact multiple of $5,000, the final instalment is reduced so that the total paid never exceeds the rounded-up plan total by more than the difference stated in your agreement. Keys and occupancy are released once <strong>60% of the balance</strong> has been paid; full registered title follows final settlement.</p>
+
+          <h2 id="pay-bulk">5. Bulk payment — 4% discount</h2>
+          <p>If you settle the catalogue price in one payment, we reduce it by <strong>4%</strong>. Example: a $128,000 home settles at <strong>$122,880</strong>, a saving of $5,120. The $200 inspection fee is refunded on completion. Title transfer is prepared immediately and keys are handed over within <strong>21 working days</strong> of cleared funds, subject only to registry processing times in the destination country.</p>
+
+          <h2 id="pay-methods">6. Accepted payment methods</h2>
+          <ul>
+            <li><strong>Bank transfer (wire):</strong> to the corporate account named in your written payment instructions. Always confirm the account details by calling +1 (917) 999-1592 before sending funds.</li>
+            <li><strong>Escrow:</strong> funds held by a licensed third-party escrow agent until the deed is registered. Recommended for bulk purchases and international buyers.</li>
+            <li><strong>Bank draft or cashier's cheque:</strong> drawn in US dollars and made payable to Vanguard Estates.</li>
+            <li><strong>Card payment:</strong> arranged through our Houston office for the $200 inspection fee and, where permitted, bulk settlement. Card payments may be subject to a processing charge disclosed at the time.</li>
+          </ul>
+          <p>We do not accept payment to personal accounts, money-transfer apps, cryptocurrency or cash by post. If anyone gives you different instructions, stop and contact us immediately.</p>
+
+          <h2 id="pay-escrow">7. Escrow and receipts</h2>
+          <p>Payments made under a sale agreement are acknowledged within <strong>one working day</strong> by email, with a numbered receipt showing the amount, currency, property reference and how the payment has been applied. Bulk funds are held in escrow until the transfer documents are lodged. Only then are funds released to Vanguard Estates. Your inspection fee receipt will state the refund conditions in writing.</p>
+
+          <h2 id="pay-missed">8. Missed instalments and payment pauses</h2>
+          <p>Life happens, and we would rather help than penalise. Every monthly-plan client may pause payments <strong>once per calendar year for up to 60 days</strong>, without charge or interest. Notify us in writing before the instalment due date. Beyond that pause, if an instalment remains unpaid for 30 days after its due date, we will contact you to agree a revised schedule. Your agreement may provide for cancellation if an alternative schedule cannot be agreed, with refunds calculated under section 10.</p>
+
+          <h2 id="pay-early">9. Early settlement</h2>
+          <p>If you are on the monthly plan and wish to settle early, you may pay the outstanding balance at any time. Where you settle the remainder in one payment, the same <strong>4% reduction</strong> applies to the outstanding amount. Your title documents are then released as soon as the settlement clears.</p>
+
+          <h2 id="pay-refunds">10. Refunds and cancellations</h2>
+          <p>Refunds are processed within <strong>20 working days</strong> of approval and returned by the original method where possible, otherwise by transfer to an account in your name.</p>
+          <ul>
+            <li>Purchase completed: inspection fee refunded in full.</li>
+            <li>Property fails inspection, or we withdraw it: all amounts paid, including the inspection fee, refunded in full.</li>
+            <li>Signed agreement cancelled within the 14-day cooling-off period and before registry lodgement: all amounts refunded, less the $200 inspection fee.</li>
+            <li>Cancellation after cooling-off or after registry lodgement: refunds follow the sale agreement and any mandatory consumer-protection law.</li>
+            <li>Monthly plan cancelled by you before 60% is paid: instalments are refundable under the agreement, less the inspection fee and any third-party costs already incurred on your written authority.</li>
+          </ul>
+
+          <h2 id="pay-security">11. Fraud, chargebacks and security</h2>
+          <p>We carry out anti-money-laundering checks and may ask for identification and proof of funds. Payments must come from an account in your name. If you believe a payment has been taken in error, contact us before raising a chargeback so we can investigate quickly. We never ask for card PINs, passwords or one-time codes, and our bank details will never change mid-transaction without a phone call from us to the number you have already provided.</p>
+          <div class="legal-callout">
+            <p><strong>Payment support:</strong> email <a href="mailto:john@vanguardestatesgroup.com">john@vanguardestatesgroup.com</a> or call or text <a href="tel:+19179991592">+1 (917) 999-1592</a>, Monday to Friday, 08:00–19:00 Central Time.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-word display">VANGUARD ESTATES</div>
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="color:var(--cream);margin-bottom:18px">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="46" height="46" stroke="currentColor" stroke-opacity=".5"/>
+            <path d="M11 13 L24 35 L37 13" stroke="currentColor" stroke-width="2.4" fill="none"/>
+            <path d="M24 35 L24 41" stroke="#E0A075" stroke-width="2.4"/>
+          </svg>
+          <div>Vanguard Estates<small>Homes · Worldwide</small></div>
+        </div>
+        <p style="max-width:38ch;font-size:14px;line-height:1.75">Affordable, title-verified homes in 21 countries. From $25,000, on a $5,000 monthly plan or bulk payment with 4% off. Inspection fee $200, refunded on completion.</p>
+        <a href="#/contact" class="btn btn-copper magnetic" style="margin-top:22px"><span>Book an inspection</span></a>
+      </div>
+      <div>
+        <h5>Catalogue</h5>
+        <a href="#/properties">All properties</a>
+        <a href="#/properties">Under $60,000</a>
+        <a href="#/properties">Coastal homes</a>
+        <a href="#/properties">City apartments</a>
+        <a href="#/properties">Villas & estates</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="#/home">About Vanguard</a>
+        <a href="#/process">How it works</a>
+        <a href="#/payment">Payment plans</a>
+        <a href="#/payment-policy">Payment policy</a>
+        <a href="#/process">Inspection process</a>
+        <a href="#/contact">Contact us</a>
+      </div>
+      <div>
+        <h5>Houston desk</h5>
+        <a href="tel:+19179991592" class="num">+1 (917) 999-1592</a>
+        <a href="mailto:john@vanguardestatesgroup.com">john@vanguardestatesgroup.com</a>
+        <a href="#/contact">1400 Post Oak Blvd, Suite 900</a>
+        <a href="#/contact">Houston, TX 77056</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© <span id="year">2026</span> Vanguard Estates · All rights reserved</div>
+      <div style="display:flex;gap:22px;flex-wrap:wrap">
+        <a href="#/terms">Terms</a><a href="#/privacy">Privacy</a><a href="#/payment-policy">Payment policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= THREE.JS (live 3D) ================= -->
+<script type="module">
+(async () => {
+  const canvas = document.getElementById('villa-canvas');
+  const holder = document.getElementById('hero-3d');
+  if (!canvas || !holder) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { holder.style.opacity = '.35'; }
+  let THREE;
+  try {
+    THREE = await import('https://unpkg.com/three@0.161.0/build/three.module.js');
+  } catch (err) {
+    try { THREE = await import('https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js'); }
+    catch (e2) { holder.style.background = 'radial-gradient(circle at 60% 45%, rgba(47,107,88,.5), transparent 62%)'; return; }
+  }
+
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias:true, alpha:true, powerPreference:'high-performance' });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.06;
+
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.Fog(0x0B1A15, 16, 46);
+
+  const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 120);
+  camera.position.set(2.6, 4.4, 13.2);
+  camera.lookAt(0, 1.1, 0);
+
+  const world = new THREE.Group();
+  scene.add(world);
+
+  /* --- materials --- */
+  const matStone  = new THREE.MeshStandardMaterial({ color:0xE6DDCE, roughness:.82, metalness:.04 });
+  const matWarm   = new THREE.MeshStandardMaterial({ color:0xD8C9B2, roughness:.72, metalness:.05 });
+  const matDark   = new THREE.MeshStandardMaterial({ color:0x23241F, roughness:.9,  metalness:.08 });
+  const matGlass  = new THREE.MeshPhysicalMaterial({ color:0x8FBDB0, roughness:.12, metalness:.12, transmission:.55, transparent:true, opacity:.55, thickness:.7 });
+  const matGlow   = new THREE.MeshStandardMaterial({ color:0xC2622C, emissive:0xC2622C, emissiveIntensity:1.9, roughness:.42 });
+  const matCopper = new THREE.MeshStandardMaterial({ color:0xC2622C, roughness:.34, metalness:.9 });
+  const matWater  = new THREE.MeshStandardMaterial({ color:0x0C2019, roughness:.24, metalness:.62 });
+
+  /* --- ground / water --- */
+  const ground = new THREE.Mesh(new THREE.CircleGeometry(46, 96), matWater);
+  ground.rotation.x = -Math.PI/2;
+  ground.position.y = -0.62;
+  ground.receiveShadow = true;
+  world.add(ground);
+
+  const pad = new THREE.Mesh(new THREE.CylinderGeometry(7.6, 7.6, .3, 96), matDark);
+  pad.position.y = -0.42;
+  pad.receiveShadow = true;
+  world.add(pad);
+
+  /* --- villa massing --- */
+  const villa = new THREE.Group();
+  world.add(villa);
+
+  const slab = new THREE.Mesh(new THREE.BoxGeometry(9.2, .34, 6.4), matDark);
+  slab.position.y = -0.12; slab.castShadow = true; slab.receiveShadow = true;
+  villa.add(slab);
+
+  const lower = new THREE.Mesh(new THREE.BoxGeometry(8, 1.85, 5.2), matStone);
+  lower.position.set(-.25, 1.05, 0); lower.castShadow = true; lower.receiveShadow = true;
+  villa.add(lower);
+
+  const upper = new THREE.Mesh(new THREE.BoxGeometry(5.6, 1.65, 4.2), matWarm);
+  upper.position.set(1.15, 2.85, -.35); upper.castShadow = true; upper.receiveShadow = true;
+  villa.add(upper);
+
+  const glassCore = new THREE.Mesh(new THREE.BoxGeometry(2.7, 1.72, 4.35), matGlass);
+  glassCore.position.set(-2.65, 1.06, .15);
+  villa.add(glassCore);
+
+  const roof = new THREE.Mesh(new THREE.BoxGeometry(10.2, .24, 7), matStone);
+  roof.position.set(-.2, 3.78, -.1); roof.castShadow = true;
+  villa.add(roof);
+
+  const roofSlab2 = new THREE.Mesh(new THREE.BoxGeometry(6.2, .18, 4.9), matDark);
+  roofSlab2.position.set(1.15, 3.72, -.35);
+  villa.add(roofSlab2);
+
+  const terrace = new THREE.Mesh(new THREE.BoxGeometry(3.4, .16, 2.2), matDark);
+  terrace.position.set(3.9, 2.0, 1.45); terrace.castShadow = true;
+  villa.add(terrace);
+
+  /* colonnade */
+  const pillarGeo = new THREE.BoxGeometry(.19, 1.95, .19);
+  const pillars = new THREE.InstancedMesh(pillarGeo, matWarm, 10);
+  pillars.castShadow = true; pillars.receiveShadow = true;
+  const dummy = new THREE.Object3D();
+  for (let i = 0; i < 10; i++) {
+    dummy.position.set(-4.2 + i * 0.93, 1.03, 2.72);
+    dummy.rotation.set(0, 0, 0);
+    dummy.updateMatrix();
+    pillars.setMatrixAt(i, dummy.matrix);
+  }
+  villa.add(pillars);
+
+  /* warm windows */
+  const winGeo = new THREE.BoxGeometry(.72, 1.05, .07);
+  const windowPositions = [
+    [-3.55, 1.15, 2.63],[-1.75, 1.15, 2.63],[0.15, 1.15, 2.63],[1.95, 1.15, 2.63],[3.6, 1.15, 2.63],
+    [0.15, 2.92, 1.78],[1.85, 2.92, 1.78],[3.1, 2.92, 1.78]
+  ];
+  windowPositions.forEach((p, i) => {
+    const w = new THREE.Mesh(winGeo, i % 3 === 0 ? matGlow : matGlass);
+    w.position.set(p[0], p[1], p[2]);
+    villa.add(w);
+  });
+
+  /* pool */
+  const pool = new THREE.Mesh(new THREE.BoxGeometry(3.9, .12, 2.5), new THREE.MeshStandardMaterial({ color:0x1B6C61, roughness:.08, metalness:.35 }));
+  pool.position.set(-2.4, -0.28, 4.55);
+  villa.add(pool);
+  const poolRim = new THREE.Mesh(new THREE.BoxGeometry(4.25, .1, 2.85), matStone);
+  poolRim.position.set(-2.4, -0.36, 4.55);
+  villa.add(poolRim);
+
+  /* copper accent fins */
+  for (let i = 0; i < 4; i++) {
+    const fin = new THREE.Mesh(new THREE.BoxGeometry(.08, 2.6, 1.1), matCopper);
+    fin.position.set(4.62, 1.55, -1.7 + i * 1.15);
+    villa.add(fin);
+  }
+
+  /* --- orbiting rings --- */
+  const ringGroup = new THREE.Group();
+  world.add(ringGroup);
+  [[8.6, 0.028, 0.42, 0], [10.4, 0.022, -0.3, 1.1], [12.6, 0.018, 0.16, 2.2]].forEach(([r, t, tilt, off]) => {
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(r, t, 12, 160), new THREE.MeshBasicMaterial({ color:0xC2622C, transparent:true, opacity:.42 }));
+    ring.rotation.x = Math.PI/2 + tilt;
+    ring.rotation.z = off;
+    ringGroup.add(ring);
+  });
+
+  /* --- lights --- */
+  scene.add(new THREE.HemisphereLight(0x8FC7B2, 0x0B1A15, 0.72));
+
+  const key = new THREE.DirectionalLight(0xFFD9AE, 2.15);
+  key.position.set(8.5, 11, 7.5);
+  key.castShadow = true;
+  key.shadow.mapSize.set(1024, 1024);
+  key.shadow.camera.near = 1; key.shadow.camera.far = 46;
+  key.shadow.camera.left = -14; key.shadow.camera.right = 14;
+  key.shadow.camera.top = 14; key.shadow.camera.bottom = -14;
+  key.shadow.bias = -0.0012;
+  scene.add(key);
+
+  const fill = new THREE.DirectionalLight(0x6FB49E, 0.85);
+  fill.position.set(-9, 5, -7);
+  scene.add(fill);
+
+  const rim = new THREE.DirectionalLight(0xE0A075, 0.7);
+  rim.position.set(-4, 3, 11);
+  scene.add(rim);
+
+  const poolLight = new THREE.PointLight(0xC2622C, 26, 22, 2);
+  poolLight.position.set(-2.4, 1.1, 5.6);
+  scene.add(poolLight);
+
+  const coreLight = new THREE.PointLight(0xFFC98F, 18, 18, 2);
+  coreLight.position.set(-2.6, 1.4, 2.2);
+  scene.add(coreLight);
+
+  /* --- dust particles --- */
+  const COUNT = 520;
+  const pos = new Float32Array(COUNT * 3);
+  const speed = new Float32Array(COUNT);
+  for (let i = 0; i < COUNT; i++) {
+    pos[i*3]   = (Math.random() - .5) * 34;
+    pos[i*3+1] = Math.random() * 13 - 1.2;
+    pos[i*3+2] = (Math.random() - .5) * 28;
+    speed[i]   = 0.004 + Math.random() * 0.014;
+  }
+  const pGeo = new THREE.BufferGeometry();
+  pGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const particles = new THREE.Points(pGeo, new THREE.PointsMaterial({
+    color:0xE9D7BC, size:.062, transparent:true, opacity:.58, depthWrite:false, blending:THREE.AdditiveBlending
+  }));
+  scene.add(particles);
+
+  /* --- resize --- */
+  function resize() {
+    const w = holder.clientWidth || window.innerWidth;
+    const h = holder.clientHeight || window.innerHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  /* --- pointer --- */
+  const target = { x: 0, y: 0 };
+  const current = { x: 0, y: 0 };
+  window.addEventListener('pointermove', (e) => {
+    target.x = (e.clientX / window.innerWidth - .5) * 2;
+    target.y = (e.clientY / window.innerHeight - .5) * 2;
+  }, { passive:true });
+
+  /* --- loop --- */
+  let visible = true;
+  const heroEl = document.getElementById('hero');
+  if ('IntersectionObserver' in window && heroEl) {
+    new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }, { threshold:.02 }).observe(heroEl);
+  }
+
+  const clock = new THREE.Clock();
+  function tick() {
+    requestAnimationFrame(tick);
+    if (!visible) return;
+    const t = clock.getElapsedTime();
+
+    current.x += (target.x - current.x) * 0.045;
+    current.y += (target.y - current.y) * 0.045;
+
+    world.rotation.y = t * 0.075 + current.x * 0.36;
+    world.rotation.x = -0.035 + current.y * 0.075;
+
+    ringGroup.rotation.y = -t * 0.13;
+    ringGroup.rotation.x = Math.sin(t * 0.18) * 0.09;
+
+    villa.position.y = Math.sin(t * 0.42) * 0.13;
+    poolLight.intensity = 22 + Math.sin(t * 1.25) * 5;
+
+    const arr = pGeo.attributes.position.array;
+    for (let i = 0; i < COUNT; i++) {
+      arr[i*3+1] += speed[i];
+      arr[i*3]   += Math.sin(t * 0.32 + i) * 0.0022;
+      if (arr[i*3+1] > 12.4) arr[i*3+1] = -1.4;
+    }
+    pGeo.attributes.position.needsUpdate = true;
+    particles.rotation.y = t * 0.017;
+
+    renderer.render(scene, camera);
+  }
+  tick();
+})();
+</script>
+
+<!-- ================= LIVE 3D GLOBE ================= -->
+<script type="module">
+(async () => {
+  const canvas = document.getElementById('globe-canvas');
+  if (!canvas) return;
+  const stage = canvas.parentElement;
+  let THREE;
+  try {
+    THREE = await import('https://unpkg.com/three@0.161.0/build/three.module.js');
+  } catch (err) {
+    try { THREE = await import('https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js'); }
+    catch (e2) {
+      canvas.style.background = 'radial-gradient(circle at 50% 46%, #2F6B58 0%, #123A2F 44%, rgba(11,26,21,0) 68%)';
+      canvas.style.borderRadius = '50%';
+      return;
+    }
+  }
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  let renderer;
+  try {
+    renderer = new THREE.WebGLRenderer({ canvas, antialias:true, alpha:true, powerPreference:'high-performance' });
+  } catch (e) {
+    canvas.style.background = 'radial-gradient(circle at 50% 46%, #2F6B58 0%, #123A2F 44%, rgba(11,26,21,0) 68%)';
+    canvas.style.borderRadius = '50%';
+    return;
+  }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.08;
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(40, 1, .1, 100);
+  camera.position.set(0, 0, 3.18);
+  const globe = new THREE.Group();
+  scene.add(globe);
+  const R = 1;
+
+  /* ---- base sphere + graticule ---- */
+  const base = new THREE.Mesh(
+    new THREE.SphereGeometry(R * .988, 64, 48),
+    new THREE.MeshStandardMaterial({ color:0x0C241C, roughness:.48, metalness:.55, emissive:0x071A14, emissiveIntensity:.9 })
+  );
+  globe.add(base);
+
+  const grid = new THREE.Mesh(
+    new THREE.SphereGeometry(R * 1.002, 48, 32),
+    new THREE.MeshBasicMaterial({ color:0x5C9E86, wireframe:true, transparent:true, opacity:.13, depthWrite:false })
+  );
+  globe.add(grid);
+
+  /* ---- dot surface ---- */
+  const N = 2000;
+  const positions = new Float32Array(N * 3);
+  const colours = new Float32Array(N * 3);
+  const cCream = new THREE.Color(0xEFE6D7);
+  const cCopper = new THREE.Color(0xE0A075);
+  const cGreen = new THREE.Color(0x5C9E86);
+  const golden = Math.PI * (3 - Math.sqrt(5));
+  for (let i = 0; i < N; i++) {
+    const y = 1 - (i / (N - 1)) * 2;
+    const rad = Math.sqrt(Math.max(0, 1 - y * y));
+    const th = golden * i;
+    positions[i*3]   = Math.cos(th) * rad * 1.004;
+    positions[i*3+1] = y * 1.004;
+    positions[i*3+2] = Math.sin(th) * rad * 1.004;
+    const roll = Math.random();
+    const c = roll > .93 ? cCopper : (roll > .45 ? cGreen : cCream);
+    colours[i*3] = c.r; colours[i*3+1] = c.g; colours[i*3+2] = c.b;
+  }
+  const dotGeo = new THREE.BufferGeometry();
+  dotGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  dotGeo.setAttribute('color', new THREE.BufferAttribute(colours, 3));
+  const dots = new THREE.Points(dotGeo, new THREE.PointsMaterial({
+    size:.0125, vertexColors:true, transparent:true, opacity:.92, sizeAttenuation:true, depthWrite:false
+  }));
+  globe.add(dots);
+
+  /* ---- copper glow behind the globe ---- */
+  function glowTexture() {
+    const c = document.createElement('canvas');
+    c.width = c.height = 160;
+    const ctx = c.getContext('2d');
+    const g = ctx.createRadialGradient(80, 80, 0, 80, 80, 80);
+    g.addColorStop(0, 'rgba(194,98,44,.5)');
+    g.addColorStop(.42, 'rgba(194,98,44,.14)');
+    g.addColorStop(1, 'rgba(194,98,44,0)');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, 160, 160);
+    const tex = new THREE.CanvasTexture(c);
+    tex.colorSpace = THREE.SRGBColorSpace;
+    return tex;
+  }
+  const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map:glowTexture(), transparent:true, depthWrite:false, blending:THREE.AdditiveBlending, opacity:.85 }));
+  glow.scale.set(3.6, 3.6, 1);
+  glow.position.set(-.35, -.15, -1.1);
+  scene.add(glow);
+
+  /* ---- lights ---- */
+  scene.add(new THREE.HemisphereLight(0x8FC7B2, 0x06130F, .95));
+  const key = new THREE.DirectionalLight(0xFFD9AE, 2.3); key.position.set(3.2, 1.8, 4); scene.add(key);
+  const rim = new THREE.DirectionalLight(0xC2622C, 2.4); rim.position.set(-3.4, -1.1, 1.4); scene.add(rim);
+  const fill = new THREE.PointLight(0x6FB49E, 9, 12, 2); fill.position.set(-1.8, 2.2, 2); scene.add(fill);
+
+  /* ---- starfield ---- */
+  const SN = 460;
+  const sPos = new Float32Array(SN * 3);
+  for (let i = 0; i < SN; i++) {
+    const r = 3.6 + Math.random() * 9;
+    const th = Math.random() * Math.PI * 2;
+    const ph = Math.acos(2 * Math.random() - 1);
+    sPos[i*3]   = r * Math.sin(ph) * Math.cos(th);
+    sPos[i*3+1] = r * Math.cos(ph);
+    sPos[i*3+2] = r * Math.sin(ph) * Math.sin(th);
+  }
+  const starGeo = new THREE.BufferGeometry();
+  starGeo.setAttribute('position', new THREE.BufferAttribute(sPos, 3));
+  const stars = new THREE.Points(starGeo, new THREE.PointsMaterial({
+    color:0xEFE6D7, size:.022, transparent:true, opacity:.55, depthWrite:false, blending:THREE.AdditiveBlending
+  }));
+  scene.add(stars);
+
+  /* ---- city markers ---- */
+  function latLonToVec(lat, lon, radius) {
+    const phi = (90 - lat) * Math.PI / 180;
+    const theta = (lon + 180) * Math.PI / 180;
+    return new THREE.Vector3(
+      -radius * Math.sin(phi) * Math.cos(theta),
+      radius * Math.cos(phi),
+      radius * Math.sin(phi) * Math.sin(theta)
+    );
+  }
+
+  const CITIES = [
+    { name:'Houston', lat:29.76, lon:-95.37, home:true },
+    { name:'Lisbon', lat:38.72, lon:-9.14 },
+    { name:'Dubai', lat:25.20, lon:55.27 },
+    { name:'Bali', lat:-8.65, lon:115.19 },
+    { name:'Medellín', lat:6.24, lon:-75.56 },
+    { name:'Melbourne', lat:-37.81, lon:144.96 },
+    { name:'Toronto', lat:43.65, lon:-79.38 },
+    { name:'Singapore', lat:1.35, lon:103.82 },
+    { name:'Stockholm', lat:59.33, lon:18.07 },
+    { name:'Tampa', lat:27.95, lon:-82.46 }
+  ];
+
+  const markers = [];
+  const ringGeo = new THREE.RingGeometry(.017, .027, 28);
+  CITIES.forEach((city) => {
+    const p = latLonToVec(city.lat, city.lon, R * 1.006);
+    const dot = new THREE.Mesh(
+      new THREE.SphereGeometry(city.home ? .018 : .0125, 16, 12),
+      new THREE.MeshBasicMaterial({ color: city.home ? 0xFFF5E6 : 0xE0A075 })
+    );
+    dot.position.copy(p);
+    globe.add(dot);
+
+    const ring = new THREE.Mesh(ringGeo, new THREE.MeshBasicMaterial({
+      color:0xC2622C, transparent:true, opacity:.8, side:THREE.DoubleSide, depthWrite:false
+    }));
+    ring.position.copy(p);
+    ring.lookAt(p.clone().multiplyScalar(3));
+    globe.add(ring);
+
+    markers.push({ dot, ring, phase: Math.random() * Math.PI * 2, home: !!city.home });
+  });
+
+  /* ---- flight arcs with travelling sparks ---- */
+  const arcs = [];
+  const pairs = [[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[1,2],[3,5],[4,1],[7,5]];
+  pairs.forEach((pair, i) => {
+    const a = latLonToVec(CITIES[pair[0]].lat, CITIES[pair[0]].lon, R * 1.006);
+    const b = latLonToVec(CITIES[pair[1]].lat, CITIES[pair[1]].lon, R * 1.006);
+    const mid = a.clone().add(b).multiplyScalar(.5).normalize().multiplyScalar(1 + a.distanceTo(b) * .34);
+    const curve = new THREE.QuadraticBezierCurve3(a, mid, b);
+    const tube = new THREE.Mesh(
+      new THREE.TubeGeometry(curve, 64, .0026, 5, false),
+      new THREE.MeshBasicMaterial({ color: i < 9 ? 0xE0A075 : 0x6FB49E, transparent:true, opacity: i < 9 ? .55 : .28, blending:THREE.AdditiveBlending, depthWrite:false })
+    );
+    globe.add(tube);
+    const spark = new THREE.Mesh(
+      new THREE.SphereGeometry(.0105, 10, 8),
+      new THREE.MeshBasicMaterial({ color:0xFFE3C6, transparent:true, opacity:.95, blending:THREE.AdditiveBlending, depthWrite:false })
+    );
+    globe.add(spark);
+    arcs.push({ curve, spark, speed:.055 + Math.random() * .075, offset: Math.random() });
+  });
+
+  /* ---- resize ---- */
+  function resize() {
+    const w = stage.clientWidth || 560;
+    const h = stage.clientHeight || 560;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  resize();
+  window.addEventListener('resize', resize);
+  if ('ResizeObserver' in window) new ResizeObserver(resize).observe(stage);
+
+  /* ---- drag to spin ---- */
+  let dragging = false, lastX = 0, lastY = 0, velY = 0, targetRot = null, holdUntil = 0;
+  canvas.addEventListener('pointerdown', (e) => {
+    dragging = true; targetRot = null;
+    lastX = e.clientX; lastY = e.clientY;
+    try { canvas.setPointerCapture(e.pointerId); } catch (ignored) {}
+  });
+  canvas.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    const dx = e.clientX - lastX;
+    const dy = e.clientY - lastY;
+    lastX = e.clientX; lastY = e.clientY;
+    globe.rotation.y += dx * .006;
+    globe.rotation.x = Math.max(-.85, Math.min(.85, globe.rotation.x + dy * .004));
+    velY = dx * .006;
+  });
+  const stopDrag = () => { dragging = false; };
+  canvas.addEventListener('pointerup', stopDrag);
+  canvas.addEventListener('pointercancel', stopDrag);
+  canvas.addEventListener('pointerleave', () => { if (dragging) dragging = false; });
+
+  /* ---- city list drives the globe ---- */
+  const cityWrap = document.getElementById('globeCities');
+  const hint = document.getElementById('globeHint');
+  if (cityWrap) {
+    cityWrap.addEventListener('click', (e) => {
+      const btn = e.target.closest('.city-row');
+      if (!btn) return;
+      const city = CITIES.find(c => c.name === btn.dataset.name);
+      if (!city) return;
+      cityWrap.querySelectorAll('.city-row').forEach(b => b.classList.remove('on'));
+      btn.classList.add('on');
+      const p = latLonToVec(city.lat, city.lon, 1);
+      const currentY = globe.rotation.y;
+      const twoPi = Math.PI * 2;
+      let diff = ((Math.atan2(p.x, p.z) - currentY) % twoPi + twoPi + Math.PI) % twoPi - Math.PI;
+      targetRot = {
+        y: currentY + diff,
+        x: Math.max(-.6, Math.min(.6, -city.lat * Math.PI / 180 * .72))
+      };
+      holdUntil = performance.now() + 9000;
+      if (hint) {
+        const price = btn.querySelector('.city-price');
+        hint.innerHTML = 'Now facing <b>' + btn.dataset.name + '</b>' + (price ? ' — homes from ' + price.textContent : '') + '.';
+      }
+    });
+  }
+
+  /* ---- pause when off-screen ---- */
+  let visible = true;
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }, { threshold:.03 }).observe(stage);
+  }
+
+  /* ---- animation loop ---- */
+  const started = performance.now();
+  function tick() {
+    requestAnimationFrame(tick);
+    if (!visible) return;
+    const t = (performance.now() - started) / 1000;
+
+    if (targetRot) {
+      globe.rotation.y += (targetRot.y - globe.rotation.y) * .055;
+      globe.rotation.x += (targetRot.x - globe.rotation.x) * .055;
+      if (Math.abs(targetRot.y - globe.rotation.y) < .002 && Math.abs(targetRot.x - globe.rotation.x) < .002) targetRot = null;
+    } else if (!dragging) {
+      if (Math.abs(velY) > .00015) { globe.rotation.y += velY; velY *= .94; }
+      else if (!reduce && performance.now() > holdUntil) globe.rotation.y += .0017;
+    }
+
+    globe.rotation.x = Math.max(-.85, Math.min(.85, globe.rotation.x));
+    globe.position.y = Math.sin(t * .55) * .022;
+    stars.rotation.y = t * .014;
+    grid.rotation.y = -t * .022;
+    glow.material.opacity = .7 + Math.sin(t * 1.1) * .16;
+
+    markers.forEach((m) => {
+      const beat = Math.pow(Math.max(0, Math.sin(t * 1.45 + m.phase)), 4);
+      const s = 1 + beat * (m.home ? 2.5 : 1.9);
+      m.ring.scale.setScalar(s);
+      m.ring.material.opacity = .82 - (s - 1) * .34;
+    });
+
+    arcs.forEach((a) => {
+      const p = (t * a.speed + a.offset) % 1;
+      const f = Math.sin(Math.PI * p);
+      a.spark.position.copy(a.curve.getPoint(p));
+      a.spark.scale.setScalar(.4 + f * 1.15);
+    });
+
+    renderer.render(scene, camera);
+  }
+  tick();
+})();
+</script>
+
+<!-- ================= APP LOGIC ================= -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---------------- Catalogue data ---------------- */
+  const IMG = (id, w) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w || 1400}`;
+
+  const LISTINGS = [
+    { id:'p1', name:'Casa Lumière', place:'Cascais, Portugal', price:128000, beds:4, baths:5, area:268, tag:'Coastal', cats:['coastal','villa'],
+      img:'https://images.pexels.com/photos/29334668/pexels-photo-29334668.png?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'A four-bedroom, five-bathroom villa above the Atlantic with a heated pool, olive courtyard and full sea aspect. Title verified March 2026.' },
+    { id:'p2', name:'The Post Oak Residence', place:'Houston, Texas, USA', price:174000, beds:5, baths:6, area:341, tag:'Family', cats:['family','city'],
+      img:'https://images.pexels.com/photos/16573669/pexels-photo-16573669.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'Five bedrooms and six bathrooms behind a gated drive, ten minutes from the Galleria. New roof, new HVAC, surveyed and priced for a quick, clean sale.' },
+    { id:'p3', name:'Palm Court Villa', place:'Dubai, UAE', price:286000, beds:6, baths:7, area:492, tag:'Villa', cats:['villa'],
+      img:'https://images.pexels.com/photos/10647324/pexels-photo-10647324.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'Six bedrooms and seven bathrooms around a private pool with palm-lined terrace. Freehold title available to international buyers.' },
+    { id:'p4', name:'Cedar Hollow', place:'Asheville, North Carolina, USA', price:62000, beds:3, baths:3, area:154, tag:'Family', cats:['family'],
+      img:'https://images.pexels.com/photos/20081378/pexels-photo-20081378.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'A warmly lit three-bedroom on a quiet mountain road. Wraparound porch, wood stove, 0.6 acre plot. Ideal first home.' },
+    { id:'p5', name:'Villa Serena', place:'Bali, Indonesia', price:94000, beds:3, baths:3, area:212, tag:'Coastal', cats:['coastal','villa'],
+      img:'https://images.pexels.com/photos/4870581/pexels-photo-4870581.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'Tropical gardens, an infinity pool and open-air living pavilions ten minutes from the coast. Sold furnished.' },
+    { id:'p6', name:'The Lindqvist House', place:'Stockholm Archipelago, Sweden', price:118000, beds:3, baths:3, area:176, tag:'Coastal', cats:['coastal','family'],
+      img:'https://images.pexels.com/photos/1572667/pexels-photo-1572667.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'A timber house on the water with its own jetty and boathouse. Wood-fired sauna included in the sale.' },
+    { id:'p7', name:'Marlowe Court', place:'Medellín, Colombia', price:39000, beds:2, baths:2, area:118, tag:'City', cats:['city','under60'],
+      img:'https://images.pexels.com/photos/29561705/pexels-photo-29561705.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'A bright two-bedroom in a secure complex with mountain views, rooftop pool and 24-hour concierge. Our best-value city entry.' },
+    { id:'p8', name:'Cypress Grove', place:'Tampa, Florida, USA', price:25000, beds:2, baths:2, area:92, tag:'Family', cats:['family','under60'],
+      img:'https://images.pexels.com/photos/8109511/pexels-photo-8109511.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'The most affordable home in the catalogue — a white clapboard cottage on a green corner plot, fully refurbished and ready to occupy.' },
+    { id:'p9', name:'Ribeira Townhouse', place:'Porto, Portugal', price:52000, beds:3, baths:3, area:141, tag:'City', cats:['city','under60'],
+      img:'https://images.pexels.com/photos/13091097/pexels-photo-13091097.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'A restored townhouse with a yellow door and granite facade, five minutes from the river. Original tiles throughout.' },
+    { id:'p10', name:'Sunset Ridge', place:'Queenstown, New Zealand', price:204000, beds:4, baths:5, area:255, tag:'Family', cats:['family','villa'],
+      img:'https://images.pexels.com/photos/4933643/pexels-photo-4933643.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'A contemporary four-bedroom, five-bathroom home glowing at dusk, with lake glimpses, underfloor heating and a double garage.' },
+    { id:'p11', name:'Marram Beach House', place:'Ecuador Coast', price:83000, beds:3, baths:3, area:187, tag:'Coastal', cats:['coastal','villa'],
+      img:'https://images.pexels.com/photos/12848486/pexels-photo-12848486.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'Twelve steps from the sand, with a rooftop terrace, outdoor kitchen and a rental history that pays the monthly instalment.' },
+    { id:'p12', name:'The Glasshouse', place:'Melbourne, Australia', price:228000, beds:4, baths:5, area:298, tag:'Villa', cats:['villa','city'],
+      img:'https://images.pexels.com/photos/13203179/pexels-photo-13203179.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      blurb:'Four bedrooms and five bathrooms behind floor-to-ceiling glazing over a mirror-still pool. Architect-designed, energy-rated A, and delivered with full warranty.' }
+  ];
+
+  const money = n => '$' + Math.round(n).toLocaleString('en-US');
+
+  /* ---------------- Router ---------------- */
+  const PAGES = ['home', 'properties', 'payment', 'process', 'contact', 'terms', 'privacy', 'payment-policy'];
+  const PLATE = { home:'01', properties:'02', payment:'03', process:'04', contact:'05', terms:'06', privacy:'07', 'payment-policy':'08' };
+  const wipe = document.getElementById('wipe');
+  const header = document.getElementById('header');
+  let current = 'home';
+
+  const TITLES = {
+    home: 'Vanguard Estates — Global Homes From $25,000 | Monthly or Bulk Payment',
+    properties: 'The Catalogue — Homes From $25,000 | Vanguard Estates',
+    payment: 'Payment Plans — $5,000 Monthly or Bulk | Vanguard Estates',
+    process: 'How It Works — From Enquiry to Keys | Vanguard Estates',
+    contact: 'Contact Vanguard Estates — Houston Desk',
+    terms: 'Terms of Service | Vanguard Estates',
+    privacy: 'Privacy Policy | Vanguard Estates',
+    'payment-policy': 'Payment Policy | Vanguard Estates'
+  };
+
+  function showPage(name, instant) {
+    if (!PAGES.includes(name)) name = 'home';
+    const apply = () => {
+      PAGES.forEach(p => {
+        const el = document.getElementById('page-' + p);
+        if (el) el.classList.toggle('active', p === name);
+      });
+      if (TITLES[name]) document.title = TITLES[name];
+      document.querySelectorAll('[data-nav]').forEach(a => a.classList.toggle('active', a.dataset.nav === name));
+      const plate = document.getElementById('railPlate');
+      if (plate) plate.textContent = PLATE[name] || '01';
+      current = name;
+      window.scrollTo({ top: 0, behavior: 'instant' in document.documentElement.style ? 'instant' : 'auto' });
+      onScroll();
+      runReveals();
+    };
+
+    if (instant) { apply(); return; }
+    wipe.classList.remove('go');
+    void wipe.offsetWidth;
+    wipe.classList.add('go');
+    setTimeout(apply, 420);
+    setTimeout(() => wipe.classList.remove('go'), 1000);
+    document.body.classList.remove('nav-open');
+  }
+
+  function routeFromHash() {
+    const h = (location.hash || '').replace('#/', '').replace('#', '');
+    return PAGES.includes(h) ? h : 'home';
+  }
+  window.addEventListener('hashchange', () => showPage(routeFromHash(), false));
+
+  /* ---------------- Header state ---------------- */
+  function onScroll() {
+    const y = window.scrollY;
+    const heroActive = current === 'home' && y < (window.innerHeight - 120);
+    header.classList.toggle('scrolled', !heroActive || y > 40);
+    header.classList.toggle('at-top', heroActive && y <= 40);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---------------- Mobile nav ---------------- */
+  const menuToggle = document.getElementById('menuToggle');
+  if (menuToggle) menuToggle.addEventListener('click', () => document.body.classList.toggle('nav-open'));
+  document.querySelectorAll('#mainNav a').forEach(a => a.addEventListener('click', () => document.body.classList.remove('nav-open')));
+
+  /* ---------------- Reveal on scroll ---------------- */
+  let observer = null;
+  function runReveals() {
+    const items = document.querySelectorAll('.page.active .reveal, .page.active .reveal-line');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(i => i.classList.add('in'));
+      return;
+    }
+    if (!observer) {
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            if (e.target.hasAttribute('data-count')) animateCount(e.target);
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: .12, rootMargin: '0px 0px -8% 0px' });
+    }
+    items.forEach(i => observer.observe(i));
+    document.querySelectorAll('.page.active [data-count]').forEach(c => observer.observe(c));
+  }
+
+  /* ---------------- Counters ---------------- */
+  const counted = new WeakSet();
+  function animateCount(el) {
+    if (counted.has(el)) return;
+    counted.add(el);
+    const target = parseFloat(el.getAttribute('data-count'));
+    if (isNaN(target)) return;
+    const prefix = el.getAttribute('data-prefix') || '';
+    const suffix = el.getAttribute('data-suffix') || '';
+    const dur = 1600;
+    const start = performance.now();
+    const fmt = v => prefix + Math.round(v).toLocaleString('en-US') + suffix;
+    function step(now) {
+      const p = Math.min((now - start) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(target * eased);
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = fmt(target);
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* ---------------- Hero slideshow (10s) ---------------- */
+  const slides = Array.from(document.querySelectorAll('.hero-slide'));
+  const CAPS = [
+    ['The Post Oak Residence — Houston, Texas', 'Plate 01 · $174,000 · 5 Bed / 6 Bath'],
+    ['Casa Lumière — Cascais, Portugal', 'Plate 02 · $128,000 · 4 Bed / 5 Bath'],
+    ['Palm Court Villa — Dubai, UAE', 'Plate 03 · $286,000 · 6 Bed / 7 Bath'],
+    ['Villa Serena — Bali, Indonesia', 'Plate 04 · $94,000 · 3 Bed / 3 Bath'],
+    ['Sunset Ridge — Queenstown, New Zealand', 'Plate 05 · $204,000 · 4 Bed / 5 Bath'],
+    ['Marram Beach House — Ecuador Coast', 'Plate 06 · $83,000 · 3 Bed / 3 Bath']
+  ];
+  const capTitle = document.getElementById('capTitle');
+  const capSub = document.getElementById('capSub');
+  const capBar = document.getElementById('capBar');
+  let slideIdx = 0;
+
+  function nextSlide() {
+    if (!slides.length) return;
+    slides[slideIdx].classList.remove('active');
+    slideIdx = (slideIdx + 1) % slides.length;
+    slides[slideIdx].classList.add('active');
+    const cap = CAPS[slideIdx % CAPS.length];
+    if (capTitle) capTitle.textContent = cap[0];
+    if (capSub) capSub.textContent = cap[1];
+    if (capBar) { capBar.classList.remove('run'); void capBar.offsetWidth; capBar.classList.add('run'); }
+  }
+  if (slides.length) setInterval(nextSlide, 10000);
+
+  /* ---------------- Featured bands ---------------- */
+  function renderFeatured() {
+    const wrap = document.getElementById('featuredBands');
+    if (!wrap) return;
+    const picks = [LISTINGS[0], LISTINGS[2], LISTINGS[4], LISTINGS[7]];
+    wrap.innerHTML = picks.map((p, i) => `
+      <article class="band">
+        <div class="band-inner">
+          <div class="band-media frame">
+            <img src="${p.img}" alt="${p.name} — ${p.place}" loading="lazy">
+            <div class="tagchip label">Plate ${String(i + 1).padStart(2, '0')} · ${p.tag}</div>
+          </div>
+          <div class="band-body">
+            <div class="eyebrow reveal"><span class="idx">${p.place.split(',').pop().trim()}</span><span class="line"></span><span class="label">${p.tag} · Title verified</span></div>
+            <div class="band-price reveal" style="transition-delay:.06s"><sup>$</sup>${p.price.toLocaleString('en-US')}</div>
+            <h3 class="reveal" style="transition-delay:.12s">${p.name}</h3>
+            <p class="reveal" style="transition-delay:.16s;color:#4A473F;max-width:46ch;margin:0">${p.blurb}</p>
+            <div class="spec-ledger reveal" style="transition-delay:.2s">
+              <div><div class="sv num">${p.beds}</div><div class="sk">Bedrooms</div></div>
+              <div><div class="sv num">${p.baths}</div><div class="sk">Bathrooms</div></div>
+              <div><div class="sv num">${p.area} m²</div><div class="sk">Floor area</div></div>
+            </div>
+            <div class="reveal" style="transition-delay:.24s;display:flex;flex-wrap:wrap;gap:12px;margin-top:30px">
+              <a href="#/contact" class="btn btn-ink magnetic"><span>Request inspection · $200</span></a>
+              <a href="#/payment" class="btn btn-ghost magnetic"><span>${Math.ceil(p.price / 5000)} × $5,000 monthly</span></a>
+            </div>
+          </div>
+        </div>
+      </article>
+    `).join('');
+  }
+
+  /* ---------------- Properties list ---------------- */
+  function renderListings(filter) {
+    const wrap = document.getElementById('listingWrap');
+    const empty = document.getElementById('emptyState');
+    const count = document.getElementById('resultCount');
+    if (!wrap) return;
+    const f = filter || 'all';
+    const rows = LISTINGS.filter(p => {
+      if (f === 'all') return true;
+      if (f === 'under60') return p.price < 60000;
+      return p.cats.indexOf(f) > -1;
+    });
+
+    wrap.innerHTML = rows.map((p, i) => `
+      <article class="listing">
+        <div class="l-media frame">
+          <img src="${p.img}" alt="${p.name} in ${p.place}" loading="lazy">
+          <div class="badge label">${String(i + 1).padStart(2, '0')} · ${p.tag}</div>
+        </div>
+        <div>
+          <div class="eyebrow"><span class="idx">${p.place.split(',').pop().trim()}</span><span class="line"></span><span class="label">${p.place}</span></div>
+          <div class="l-price" style="margin-top:16px"><sup>$</sup>${p.price.toLocaleString('en-US')}</div>
+          <h3>${p.name}</h3>
+          <p style="color:#4A473F;margin:0;max-width:52ch">${p.blurb}</p>
+          <div class="spec-ledger">
+            <div><div class="sv num">${p.beds}</div><div class="sk">Bedrooms</div></div>
+            <div><div class="sv num">${p.baths}</div><div class="sk">Bathrooms</div></div>
+            <div><div class="sv num">${p.area} m²</div><div class="sk">Floor area</div></div>
+          </div>
+          <div class="l-actions">
+            <a href="#/contact" class="btn btn-copper magnetic"><span>Request inspection · $200</span></a>
+            <a href="#/payment" class="btn btn-ghost magnetic"><span>${Math.ceil(p.price / 5000)} × $5,000 / month</span></a>
+          </div>
+        </div>
+      </article>
+    `).join('');
+
+    if (empty) empty.style.display = rows.length ? 'none' : 'block';
+    if (count) count.textContent = `Showing ${rows.length} ${rows.length === 1 ? 'property' : 'properties'}`;
+    wrap.querySelectorAll('.magnetic').forEach(bindMagnetic);
+    wrap.querySelectorAll('.reveal').forEach(r => r.classList.add('in'));
+  }
+
+  document.addEventListener('click', (e) => {
+    const chip = e.target.closest('.chip');
+    if (!chip) return;
+    document.querySelectorAll('#filters .chip').forEach(c => c.classList.remove('on'));
+    chip.classList.add('on');
+    renderListings(chip.dataset.filter);
+  });
+
+  /* ---------------- Payment calculator ---------------- */
+  const range = document.getElementById('priceRange');
+  const fmtMoney = n => '$' + Math.round(n).toLocaleString('en-US');
+
+  function updateCalc() {
+    if (!range) return;
+    const price = parseInt(range.value, 10);
+    const route = (document.querySelector('input[name="calcRoute"]:checked') || {}).value || 'monthly';
+    const priceEl = document.getElementById('calcPrice');
+    const p1 = document.getElementById('outPrimary');
+    const m = document.getElementById('outMonths');
+    const tot = document.getElementById('outTotal');
+    const save = document.getElementById('outSave');
+    const keys = document.getElementById('outKeys');
+
+    if (priceEl) priceEl.textContent = fmtMoney(price);
+
+    const months = Math.ceil(price / 5000);
+    const bulkTotal = price * 0.96;
+
+    if (route === 'bulk') {
+      if (p1) p1.textContent = fmtMoney(bulkTotal) + ' once';
+      if (m) m.textContent = '1 payment';
+      if (tot) tot.textContent = fmtMoney(bulkTotal);
+      if (save) save.textContent = 'Save ' + fmtMoney(price * 0.04);
+      if (keys) keys.textContent = '21 working days';
+    } else {
+      if (p1) p1.textContent = '$5,000 / month';
+      if (m) m.textContent = months + (months === 1 ? ' month' : ' months');
+      if (tot) tot.textContent = fmtMoney(price);
+      if (save) save.textContent = 'No interest or fees';
+      if (keys) keys.textContent = '60% paid';
+    }
+  }
+  if (range) {
+    range.addEventListener('input', updateCalc);
+    document.querySelectorAll('input[name="calcRoute"]').forEach(r => r.addEventListener('change', updateCalc));
+    updateCalc();
+  }
+
+  /* ---------------- Radio option legibility (works without :has) ---------------- */
+  function syncRadioStates(scope) {
+    const root = scope || document;
+    root.querySelectorAll('.radio-row label').forEach(label => {
+      const input = label.querySelector('input[type="radio"]');
+      if (input) label.classList.toggle('is-checked', input.checked);
+    });
+  }
+  syncRadioStates();
+  document.addEventListener('change', (e) => {
+    const input = e.target;
+    if (input && input.matches && input.matches('.radio-row input[type="radio"]')) {
+      const row = input.closest('.radio-row');
+      if (row) syncRadioStates(row);
+    }
+  });
+  document.addEventListener('click', (e) => {
+    const label = e.target.closest && e.target.closest('.radio-row label');
+    if (label) setTimeout(() => syncRadioStates(label.closest('.radio-row')), 0);
+  });
+
+  /* ---------------- Magnetic buttons ---------------- */
+  function bindMagnetic(el) {
+    if (el.dataset.magnetic) return;
+    el.dataset.magnetic = '1';
+    if (window.matchMedia('(hover: none)').matches) return;
+    el.addEventListener('pointermove', (e) => {
+      const r = el.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width / 2;
+      const y = e.clientY - r.top - r.height / 2;
+      el.style.transform = `translate(${x * 0.16}px, ${y * 0.22}px)`;
+    });
+    el.addEventListener('pointerleave', () => { el.style.transform = ''; });
+  }
+  document.querySelectorAll('.magnetic').forEach(bindMagnetic);
+
+  /* ---------------- Formspree ---------------- */
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  const submitBtn = document.getElementById('submitBtn');
+  const submitText = document.getElementById('submitText');
+
+  if (form) {
+    const esc = (s) => String(s).replace(/[&<>"']/g, (m) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[m]));
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const name = (document.getElementById('fname') || {}).value || '';
+      const email = (document.getElementById('femail') || {}).value || '';
+      const msg = (document.getElementById('fmsg') || {}).value || '';
+
+      if (!name.trim() || !email.trim() || !msg.trim()) {
+        status.className = 'form-status show err';
+        status.innerHTML = '<strong>Almost there.</strong> Please complete your name, email address and message so we can reply.';
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.trim())) {
+        status.className = 'form-status show err';
+        status.innerHTML = '<strong>Check that email.</strong> It looks incomplete — we need a valid address to send your shortlist to.';
+        return;
+      }
+
+      submitBtn.classList.add('loading');
+      submitText.textContent = 'Sending…';
+      status.className = 'form-status';
+
+      try {
+        const res = await fetch('https://formspree.io/f/xbggzova', {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          form.reset();
+          status.className = 'form-status show';
+          status.innerHTML = `<strong>Thank you, ${esc(name.trim().split(/\s+/)[0])}.</strong> Your enquiry is on its way to our Houston desk. An advisor will reply to <strong>${esc(email.trim())}</strong> within one working day with matched properties and a payment schedule.`;
+        } else {
+          let detail = '';
+          try {
+            const data = await res.json();
+            if (data && data.errors) detail = ' ' + data.errors.map(er => er.message).join(' ');
+          } catch (ignored) {}
+          status.className = 'form-status show err';
+          status.innerHTML = '<strong>That did not send.</strong>' + esc(detail) + ' Please email us directly at john@vanguardestatesgroup.com or call +1 (917) 999-1592 and we will pick it up immediately.';
+        }
+      } catch (err) {
+        status.className = 'form-status show err';
+        status.innerHTML = '<strong>Connection problem.</strong> Your message could not be sent just now. Please try again, or email <a href="mailto:john@vanguardestatesgroup.com">john@vanguardestatesgroup.com</a> / call <a href="tel:+19179991592">+1 (917) 999-1592</a>.';
+      } finally {
+        submitBtn.classList.remove('loading');
+        submitText.textContent = 'Send enquiry';
+        status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  }
+
+  /* ---------------- Legal contents jumps ---------------- */
+  document.addEventListener('click', (e) => {
+    const jump = e.target.closest('[data-jump]');
+    if (!jump) return;
+    e.preventDefault();
+    const target = document.getElementById(jump.getAttribute('data-jump'));
+    if (target) {
+      const y = target.getBoundingClientRect().top + window.scrollY - 92;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  });
+
+  /* ---------------- Init ---------------- */
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  renderFeatured();
+  renderListings('all');
+  showPage(routeFromHash(), true);
+  onScroll();
+  runReveals();
+})();
+</script>
+
+</body>
+</html>
